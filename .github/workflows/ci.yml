@@ -1,0 +1,126 @@
+name: CI/CD Pipeline
+
+on:
+  push:
+    branches: [ main, develop ]
+  pull_request:
+    branches: [ main, develop ]
+
+jobs:
+  quality-gates:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+      
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '20'
+          cache: 'npm'
+      
+      - name: Install dependencies
+        run: npm ci
+      
+      - name: Lint JavaScript
+        run: npm run lint:js
+        continue-on-error: true
+      
+      - name: Lint CSS
+        run: npm run lint:css
+        continue-on-error: true
+      
+      - name: Lint Markdown
+        run: npm run lint:md
+        continue-on-error: true
+      
+      - name: Build project
+        run: npm run build
+      
+      - name: Run Playwright tests
+        run: npm test
+        continue-on-error: true
+      
+      - name: Install Playwright browsers
+        run: npx playwright install --with-deps
+      
+      - name: Run Lighthouse CI
+        run: npm run lighthouse
+        continue-on-error: true
+        env:
+          LHCI_GITHUB_APP_TOKEN: ${{ secrets.LHCI_GITHUB_APP_TOKEN }}
+      
+      - name: Check bundle size
+        run: npm run bundle-size
+        continue-on-error: true
+      
+      - name: Generate review packet
+        run: npm run generate-review-packet
+        continue-on-error: true
+      
+      - name: Upload logs
+        uses: actions/upload-artifact@v3
+        if: always()
+        with:
+          name: logs
+          path: logs/
+          retention-days: 7
+      
+      - name: Send Discord notification
+        if: failure()
+        run: |
+          node -e "
+          const { sendBuildStatus } = require('./_functions/discord-webhook.js');
+          sendBuildStatus('failure', 'CI pipeline failed', {
+            'Workflow': '${{ github.workflow }}',
+            'Branch': '${{ github.ref }}',
+            'Commit': '${{ github.sha }}'
+          });
+          "
+        env:
+          DISCORD_WEBHOOK_BUILD_STATUS: ${{ secrets.DISCORD_WEBHOOK_BUILD_STATUS }}
+        continue-on-error: true
+
+  deploy:
+    needs: quality-gates
+    runs-on: ubuntu-latest
+    if: github.ref == 'refs/heads/main'
+    
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+      
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '20'
+          cache: 'npm'
+      
+      - name: Install dependencies
+        run: npm ci
+      
+      - name: Build project
+        run: npm run build
+      
+      - name: Deploy to Netlify
+        uses: netlify/actions/cli@master
+        with:
+          args: deploy --dir=_site --prod
+        env:
+          NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
+          NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
+      
+      - name: Send review queue notification
+        run: |
+          node -e "
+          const { sendReviewQueue } = require('./_functions/discord-webhook.js');
+          sendReviewQueue('Build completed and deployed. Ready for final review.', {
+            'URL': 'https://${{ secrets.NETLIFY_SITE_ID }}.netlify.app',
+            'Commit': '${{ github.sha }}'
+          });
+          "
+        env:
+          DISCORD_WEBHOOK_REVIEW_QUEUE: ${{ secrets.DISCORD_WEBHOOK_REVIEW_QUEUE }}
+        continue-on-error: true
+

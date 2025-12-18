@@ -1,0 +1,180 @@
+/* Theme System - CSS Variables */
+/* Base theme (default: calm) */
+:root {
+  /* Typography */
+  --font-primary: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --font-heading: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --font-mono: 'Fira Code', 'Courier New', monospace;
+  
+  /* Spacing Scale */
+  --space-xs: 0.25rem;
+  --space-sm: 0.5rem;
+  --space-md: 1rem;
+  --space-lg: 1.5rem;
+  --space-xl: 2rem;
+  --space-2xl: 3rem;
+  --space-3xl: 4rem;
+  
+  /* Border Radius */
+  --radius-sm: 0.25rem;
+  --radius-md: 0.5rem;
+  --radius-lg: 1rem;
+  --radius-xl: 1.5rem;
+  --radius-full: 9999px;
+  
+  /* Shadows */
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.1);
+  --shadow-lg: 0 10px 15px rgba(0, 0, 0, 0.1);
+  --shadow-xl: 0 20px 25px rgba(0, 0, 0, 0.15);
+  
+  /* Transitions */
+  --transition-fast: 150ms ease;
+  --transition-base: 300ms ease;
+  --transition-slow: 500ms ease;
+}
+
+/* ONYX THEME - Dark, Editorial */
+[data-theme="onyx"] {
+  --color-bg-primary: #0a0a0a;
+  --color-bg-secondary: #1a1a1a;
+  --color-bg-tertiary: #2a2a2a;
+  --color-text-primary: #f5f5f5;
+  --color-text-secondary: #b0b0b0;
+  --color-text-muted: #707070;
+  --color-accent: #ff6b6b;
+  --color-accent-hover: #ff5252;
+  --color-border: #333333;
+  --color-success: #51cf66;
+  --color-error: #ff6b6b;
+  --color-warning: #ffd93d;
+  --color-info: #4dabf7;
+  
+  --font-heading: 'Playfair Display', 'Georgia', serif;
+  --spacing-scale: 1.2;
+  --radius-base: 0;
+  --shadow-intensity: 0.3;
+}
+
+/* PAPER THEME - Light, Print-Inspired */
+[data-theme="paper"] {
+  --color-bg-primary: #fefefe;
+  --color-bg-secondary: #f9f9f9;
+  --color-bg-tertiary: #f5f5f5;
+  --color-text-primary: #1a1a1a;
+  --color-text-secondary: #4a4a4a;
+  --color-text-muted: #8a8a8a;
+  --color-accent: #2c3e50;
+  --color-accent-hover: #1a252f;
+  --color-border: #e0e0e0;
+  --color-success: #27ae60;
+  --color-error: #c0392b;
+  --color-warning: #f39c12;
+  --color-info: #3498db;
+  
+  --font-heading: 'Merriweather', 'Georgia', serif;
+  --font-primary: 'Source Sans Pro', sans-serif;
+  --spacing-scale: 1.5;
+  --radius-base: 0;
+  --shadow-intensity: 0.1;
+  --paper-texture: url("data:image/svg+xml,%3Csvg width='100' height='100' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='1'/%3E%3C/filter%3E%3Crect width='100' height='100' filter='url(%23noise)' opacity='0.03'/%3E%3C/svg%3E");
+}
+
+/* NEON THEME - High-Contrast, Modern */
+[data-theme="neon"] {
+  --color-bg-primary: #0d1117;
+  --color-bg-secondary: #161b22;
+  --color-bg-tertiary: #21262d;
+  --color-text-primary: #f0f6fc;
+  --color-text-secondary: #c9d1d9;
+  --color-text-muted: #8b949e;
+  --color-accent: #00ff88;
+  --color-accent-hover: #00cc6a;
+  --color-border: #30363d;
+  --color-success: #00ff88;
+  --color-error: #ff0080;
+  --color-warning: #ffaa00;
+  --color-info: #00d4ff;
+  
+  --font-heading: 'Space Grotesk', sans-serif;
+  --font-primary: 'Inter', sans-serif;
+  --spacing-scale: 1;
+  --radius-base: 0.5rem;
+  --shadow-intensity: 0.8;
+  --neon-glow: 0 0 10px currentColor, 0 0 20px currentColor, 0 0 30px currentColor;
+}
+
+/* BRUTAL THEME - Brutalist, Bold, Sharp */
+[data-theme="brutal"] {
+  --color-bg-primary: #ffffff;
+  --color-bg-secondary: #000000;
+  --color-bg-tertiary: #ffff00;
+  --color-text-primary: #000000;
+  --color-text-secondary: #ffffff;
+  --color-text-muted: #666666;
+  --color-accent: #ff0000;
+  --color-accent-hover: #cc0000;
+  --color-border: #000000;
+  --color-success: #00ff00;
+  --color-error: #ff0000;
+  --color-warning: #ffff00;
+  --color-info: #0000ff;
+  
+  --font-heading: 'Impact', 'Arial Black', sans-serif;
+  --font-primary: 'Courier New', monospace;
+  --spacing-scale: 0.8;
+  --radius-base: 0;
+  --shadow-intensity: 0;
+  --border-width: 4px;
+}
+
+/* CALM THEME - Soft, Airy, Minimal */
+[data-theme="calm"] {
+  --color-bg-primary: #fafafa;
+  --color-bg-secondary: #f5f5f5;
+  --color-bg-tertiary: #f0f0f0;
+  --color-text-primary: #2d3748;
+  --color-text-secondary: #4a5568;
+  --color-text-muted: #718096;
+  --color-accent: #4299e1;
+  --color-accent-hover: #3182ce;
+  --color-border: #e2e8f0;
+  --color-success: #48bb78;
+  --color-error: #f56565;
+  --color-warning: #ed8936;
+  --color-info: #4299e1;
+  
+  --font-heading: 'Inter', sans-serif;
+  --font-primary: 'Inter', sans-serif;
+  --spacing-scale: 1.25;
+  --radius-base: 0.75rem;
+  --shadow-intensity: 0.15;
+}
+
+/* Apply theme variables */
+[data-theme="onyx"],
+[data-theme="paper"],
+[data-theme="neon"],
+[data-theme="brutal"],
+[data-theme="calm"] {
+  background-color: var(--color-bg-primary);
+  color: var(--color-text-primary);
+  font-family: var(--font-primary);
+  line-height: 1.6;
+}
+
+/* Theme-specific adjustments */
+[data-theme="paper"] {
+  background-image: var(--paper-texture);
+}
+
+[data-theme="neon"] * {
+  text-shadow: var(--neon-glow);
+}
+
+[data-theme="brutal"] * {
+  border-width: var(--border-width, 2px);
+  border-style: solid;
+  border-color: var(--color-border);
+}
+

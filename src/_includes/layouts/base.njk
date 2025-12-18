@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="calm" data-analytics-enabled="false">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% if title %}{{ title }} - {% endif %}MyWebClass Design Gallery</title>
+    <meta name="description" content="{{ description | default('Outstanding Design Styles Gallery showcasing five distinct themes') }}">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="/css/themes.css">
+    <link rel="stylesheet" href="/css/base.css">
+    
+    <!-- Preconnect for fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@700&family=Merriweather:wght@400;700&family=Space+Grotesk:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+    {% include "components/header.njk" %}
+    
+    <main>
+        {{ content | safe }}
+    </main>
+    
+    {% include "components/footer.njk" %}
+    {% include "components/cookie-banner.njk" %}
+    
+    <!-- Scripts -->
+    <script src="/js/theme-switcher.js"></script>
+    <script src="/js/consent.js"></script>
+    <script src="/js/analytics.js"></script>
+    
+    {% if scripts %}
+        {% for script in scripts %}
+            <script src="{{ script }}"></script>
+        {% endfor %}
+    {% endif %}
+</body>
+</html>
+

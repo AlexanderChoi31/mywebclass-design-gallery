@@ -1,0 +1,61 @@
+{
+  "name": "mywebclass-design-gallery",
+  "version": "1.0.0",
+  "description": "MyWebClass – Outstanding Design Styles Gallery (Eleventy + Sanity + Netlify)",
+  "scripts": {
+    "dev": "eleventy --serve --port=8080",
+    "build": "eleventy",
+    "test": "playwright test",
+    "test:ui": "playwright test --ui",
+    "lint": "npm run lint:js && npm run lint:css && npm run lint:md",
+    "lint:js": "eslint src/**/*.js _functions/**/*.js --fix",
+    "lint:css": "stylelint src/**/*.css --fix",
+    "lint:md": "markdownlint docs/**/*.md README.md --fix",
+    "format": "prettier --write \"**/*.{js,json,md,css,html,njk}\"",
+    "bundle-size": "bundlesize",
+    "lighthouse": "lhci autorun",
+    "quality-check": "npm run lint && npm test && npm run lighthouse",
+    "generate-review-packet": "node scripts/generate-review-packet.js",
+    "postbuild": "npm run generate-review-packet"
+  },
+  "keywords": [
+    "eleventy",
+    "11ty",
+    "static-site-generator",
+    "design-gallery",
+    "themes"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@11ty/eleventy": "^2.0.1",
+    "@sanity/client": "^6.15.0",
+    "airtable": "^0.12.2",
+    "dotenv": "^16.3.1",
+    "node-fetch": "^2.7.0"
+  },
+  "devDependencies": {
+    "@lhci/cli": "^0.12.0",
+    "@playwright/test": "^1.40.0",
+    "bundlesize": "^0.18.1",
+    "eslint": "^8.55.0",
+    "markdownlint-cli": "^0.38.0",
+    "node-fetch": "^2.7.0",
+    "prettier": "^3.1.1",
+    "stylelint": "^16.0.0",
+    "stylelint-config-standard": "^36.0.0"
+  },
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "bundlesize": [
+    {
+      "path": "_site/**/*.js",
+      "maxSize": "50kb"
+    },
+    {
+      "path": "_site/**/*.css",
+      "maxSize": "20kb"
+    }
+  ]
+}
