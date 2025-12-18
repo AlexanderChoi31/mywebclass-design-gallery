@@ -1,12 +1,12 @@
 ---
 layout: base.njk
-title: Automated Improvement Loop - Our Most Impressive Process
+title: Automated Refinement - Our Most Impressive Process
 description: Discover how our automated screenshot feedback loop iteratively improves design quality through AI-driven assessment and automated fixes.
 ---
 
 <div class="section">
     <div class="container" style="text-align: center !important; display: flex; flex-direction: column; align-items: center;">
-        <h1 style="text-align: center !important; width: 100%;">🔄 Automated Improvement Loop</h1>
+        <h1 style="text-align: center !important; width: 100%;">🔄 Automated Refinement</h1>
         <p style="font-size: 1.25rem; color: var(--color-text-secondary); max-width: 800px; margin: 0 auto; text-align: center !important;">
             Our most impressive innovation: An automated system that captures screenshots, assesses design quality, 
             identifies issues, and iteratively fixes them until perfection is achieved. This is how we achieved 
@@ -20,7 +20,7 @@ description: Discover how our automated screenshot feedback loop iteratively imp
     <div class="container">
         <h2>How The Loop Works</h2>
         <p style="color: var(--color-text-secondary); margin-bottom: var(--space-3xl);">
-            The automated improvement loop is a self-correcting system that continuously refines design quality 
+            The automated refinement process is a self-correcting system that continuously refines design quality 
             through iterative assessment and automated fixes.
         </p>
 
@@ -319,7 +319,7 @@ description: Discover how our automated screenshot feedback loop iteratively imp
     <div class="container">
         <h2>Real Results From Our Loop</h2>
         <p style="color: var(--color-text-secondary); margin-bottom: var(--space-3xl);">
-            Here's what the automated improvement loop achieved for this project:
+            Here's what the automated refinement process achieved for this project:
         </p>
 
         <div class="card-grid" style="margin-bottom: var(--space-3xl);">
@@ -396,7 +396,7 @@ description: Discover how our automated screenshot feedback loop iteratively imp
             <div class="card" style="margin-bottom: var(--space-xl);">
                 <h3>📝 Running the Loop</h3>
                 <p style="color: var(--color-text-secondary); margin-bottom: var(--space-md);">
-                    To run the automated improvement loop:
+                    To run the automated refinement process:
                 </p>
                 <div style="background-color: var(--color-bg-tertiary); padding: var(--space-md); border-radius: var(--radius-base); font-family: monospace; margin-bottom: var(--space-md);">
                     <code>npm run improve:loop</code>
@@ -424,7 +424,7 @@ description: Discover how our automated screenshot feedback loop iteratively imp
     <div class="container" style="text-align: center;">
         <h2>Why This Is Our Most Impressive Process</h2>
         <p style="font-size: 1.25rem; color: var(--color-text-secondary); max-width: 800px; margin: 0 auto var(--space-3xl);">
-            This automated improvement loop represents a breakthrough in design quality assurance. 
+            This automated refinement process represents a breakthrough in design quality assurance. 
             Instead of manually checking designs, we've automated the entire process of assessment, 
             identification, and refinement.
         </p>
