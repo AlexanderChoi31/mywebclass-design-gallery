@@ -6,8 +6,8 @@ description: Discover how our automated screenshot feedback loop iteratively imp
 
 <div class="section">
     <div class="container" style="text-align: center;">
-        <h1>🔄 Automated Improvement Loop</h1>
-        <p style="font-size: 1.25rem; color: var(--color-text-secondary); max-width: 800px; margin: 0 auto;">
+        <h1 style="text-align: center;">🔄 Automated Improvement Loop</h1>
+        <p style="font-size: 1.25rem; color: var(--color-text-secondary); max-width: 800px; margin: 0 auto; text-align: center;">
             Our most impressive innovation: An automated system that captures screenshots, assesses design quality, 
             identifies issues, and iteratively fixes them until perfection is achieved. This is how we achieved 
             <strong>10 iterations, 240+ screenshots, and perfect quality scores</strong>.
