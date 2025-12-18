@@ -28,7 +28,9 @@
     "quality-comprehensive": "node scripts/comprehensive-quality-check.js",
     "generate-review-packet": "node scripts/generate-review-packet.js",
     "postbuild": "npm run generate-review-packet",
-    "test:all": "node scripts/test-everything.js"
+    "test:all": "node scripts/test-everything.js",
+    "metrics": "node scripts/view-metrics.js",
+    "view-metrics": "node scripts/view-metrics.js"
   },
   "keywords": [
     "eleventy",
