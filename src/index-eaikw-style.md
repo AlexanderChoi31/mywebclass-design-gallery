@@ -46,8 +46,8 @@ description: Welcome to MyWebClass Design Gallery - Explore six distinct design 
 
 <!-- 01 — Start Here Section -->
 <div class="section" style="background-color: var(--color-bg-secondary);">
-    <div class="container" style="max-width: 100%; padding: 0;">
-        <div style="max-width: 1200px; margin: 0 auto; padding: var(--space-3xl) var(--space-xl);">
+    <div class="container">
+        <div style="max-width: 1200px; margin: 0 auto;">
             <p style="font-size: 0.875rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--color-text-muted); margin-bottom: var(--space-sm);">
                 01 — Start Here
             </p>
@@ -57,10 +57,8 @@ description: Welcome to MyWebClass Design Gallery - Explore six distinct design 
             <p style="font-size: 1.125rem; color: var(--color-text-secondary); max-width: 800px; margin-bottom: var(--space-3xl); line-height: 1.6;">
                 Different audiences need different entry points. Pick the path that matches where you are and what you need.
             </p>
-        </div>
-    </div>
-    
-    <div class="choose-path-grid">
+            
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: var(--space-xl);">
                 <article class="card" style="display: flex; flex-direction: column;">
                     <div style="display: flex; align-items: start; gap: var(--space-md);">
                         <div style="font-size: 1.5rem; font-weight: 700; color: var(--color-accent); flex-shrink: 0;">01</div>
@@ -177,12 +175,11 @@ description: Welcome to MyWebClass Design Gallery - Explore six distinct design 
                     </div>
                 </article>
             </div>
-    </div>
-    
-    <div class="container" style="max-width: 100%; padding: 0;">
-        <div style="max-width: 1200px; margin: 0 auto; padding: var(--space-3xl) var(--space-xl); text-align: center;">
-            <p style="color: var(--color-text-secondary); margin-bottom: var(--space-sm);">Or Start At The Beginning</p>
-            <a href="/about/" style="color: var(--color-accent); font-weight: 600;">How We Built This →</a>
+            
+            <div style="margin-top: var(--space-3xl); text-align: center;">
+                <p style="color: var(--color-text-secondary); margin-bottom: var(--space-sm);">Or Start At The Beginning</p>
+                <a href="/about/" style="color: var(--color-accent); font-weight: 600;">How We Built This →</a>
+            </div>
         </div>
     </div>
 </div>

@@ -147,11 +147,12 @@ a {
 /* Neon theme - interactive lighting effects on cards */
 [data-theme="neon"] .card {
   position: relative;
-  overflow: hidden;
+  overflow: visible;
   z-index: 1;
   border: 1px solid rgb(255 255 255 / 20%);
   box-shadow: 0 0 3px rgb(255 255 255 / 30%), 0 0 6px rgb(255 255 255 / 15%), inset 0 0 3px rgb(255 255 255 / 10%);
   background-color: rgb(10 10 10 / 80%);
+  isolation: isolate;
 }
 
 [data-theme="neon"] .card::before {
@@ -165,7 +166,8 @@ a {
   transform: translate(-50%, -50%);
   transition: width 0.4s ease, height 0.4s ease, opacity 0.4s ease;
   opacity: 0;
-  z-index: -1;
+  z-index: 0;
+  pointer-events: none;
 }
 
 [data-theme="neon"] .card:hover {
@@ -181,7 +183,7 @@ a {
 [data-theme="neon"] .card:hover::before {
   width: 300px;
   height: 300px;
-  opacity: 1;
+  opacity: 0.3;
 }
 
 /* Neon theme - lighting on buttons with subtle glow */
@@ -268,6 +270,37 @@ a {
 @media (width <= 768px) {
   .service-offering-grid {
     grid-template-columns: 1fr;
+  }
+}
+
+/* Choose Your Path grid - stretches horizontally with 100px margins (Royal Caribbean style) */
+.choose-path-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem; /* Larger gap between cards for Royal Caribbean style spacing */
+  margin: 0 100px; /* Consistent 100px margins from page edges */
+  padding: var(--space-3xl) 0 var(--space-4xl) 0; /* Generous vertical padding */
+  width: calc(100% - 200px); /* Full width minus margins */
+  box-sizing: border-box;
+}
+
+.choose-path-grid > article {
+  width: 100%;
+  min-height: 100%; /* Ensure cards fill available space */
+}
+
+/* Ensure cards have consistent spacing and sizing */
+.choose-path-grid .card {
+  height: 100%;
+  padding: var(--space-xl); /* Generous padding inside cards */
+}
+
+@media (width <= 768px) {
+  .choose-path-grid {
+    margin: 0 var(--space-md);
+    width: calc(100% - calc(var(--space-md) * 2));
+    padding: var(--space-xl) 0;
+    gap: var(--space-lg); /* Smaller gap on mobile */
   }
 }
 

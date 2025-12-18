@@ -282,6 +282,49 @@
   background-color: var(--color-bg-primary);
 }
 
+/* Brutal theme - abstract brutalist styling for cards */
+[data-theme="brutal"] .card {
+  background-color: var(--color-bg-primary);
+  border: var(--border-width) solid var(--color-border);
+  position: relative;
+  transform: rotate(0deg);
+  transition: transform 0.1s ease, box-shadow 0.1s ease;
+  box-shadow: none;
+  overflow: visible;
+  isolation: isolate;
+}
+
+[data-theme="brutal"] .card:hover {
+  transform: rotate(-0.5deg) translate(-2px, -2px);
+  box-shadow: 8px 8px 0 var(--color-bg-tertiary);
+}
+
+[data-theme="brutal"] .card:nth-child(even) {
+  transform: rotate(0.5deg);
+}
+
+[data-theme="brutal"] .card:nth-child(even):hover {
+  transform: rotate(1deg) translate(2px, -2px);
+}
+
+/* Brutal theme - buttons with strong borders */
+[data-theme="brutal"] .btn {
+  border: var(--border-width) solid var(--color-border);
+  background-color: var(--color-bg-primary);
+  color: var(--color-text-primary);
+  font-weight: 900;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  border-radius: 0;
+}
+
+[data-theme="brutal"] .btn:hover {
+  background-color: var(--color-bg-tertiary);
+  color: var(--color-bg-primary);
+  transform: translate(-2px, -2px);
+  box-shadow: 4px 4px 0 var(--color-accent);
+}
+
 /* Royal theme - elegant curvature and cursive styling */
 [data-theme="royal"] {
   background-color: #fff;
