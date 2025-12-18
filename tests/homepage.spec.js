@@ -69,11 +69,11 @@ test.describe('Homepage', () => {
     const nav = page.locator('nav');
     await expect(nav).toBeVisible();
     
-    // Check navigation links
-    await expect(nav.locator('a[href="/"]')).toBeVisible();
-    await expect(nav.locator('a[href="/themes/"]')).toBeVisible();
-    await expect(nav.locator('a[href="/cms/"]')).toBeVisible();
-    await expect(nav.locator('a[href="/submit/"]')).toBeVisible();
+    // Check navigation links by their text content to avoid ambiguity
+    await expect(nav.getByRole('link', { name: 'Home' })).toBeVisible();
+    await expect(nav.getByRole('link', { name: 'Themes' })).toBeVisible();
+    await expect(nav.getByRole('link', { name: 'Content' })).toBeVisible();
+    await expect(nav.getByRole('link', { name: 'Submit' })).toBeVisible();
   });
 
   test('theme cards are displayed', async ({ page }) => {
