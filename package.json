@@ -43,7 +43,8 @@
     "@11ty/eleventy": "^2.0.1",
     "@sanity/client": "^6.15.0",
     "dotenv": "^16.3.1",
-    "node-fetch": "^2.7.0"
+    "node-fetch": "^2.7.0",
+    "nodemailer": "^6.10.1"
   },
   "optionalDependencies": {
     "airtable": "^0.12.2"

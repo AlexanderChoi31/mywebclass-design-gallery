@@ -67,7 +67,7 @@ jobs:
           path: logs/
           retention-days: 7
       
-      - name: Send Discord notification
+      - name: Send Discord notification (on failure)
         if: failure()
         run: |
           node -e "
@@ -80,6 +80,56 @@ jobs:
           "
         env:
           DISCORD_WEBHOOK_BUILD_STATUS: ${{ secrets.DISCORD_WEBHOOK_BUILD_STATUS }}
+        continue-on-error: true
+      
+      - name: Send email notification (on failure)
+        if: failure()
+        run: |
+          node -e "
+          const { sendBuildStatusEmail } = require('./_functions/email-notification.js');
+          sendBuildStatusEmail('failure', 'CI pipeline failed', {
+            'Workflow': '${{ github.workflow }}',
+            'Branch': '${{ github.ref }}',
+            'Commit': '${{ github.sha }}',
+            'Repository': '${{ github.repository }}',
+            'Run URL': '${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}'
+          });
+          "
+        env:
+          BUILD_STATUS_EMAIL_TO: ${{ secrets.BUILD_STATUS_EMAIL_TO }}
+          BUILD_STATUS_EMAIL_FROM: ${{ secrets.BUILD_STATUS_EMAIL_FROM }}
+          SENDGRID_API_KEY: ${{ secrets.SENDGRID_API_KEY }}
+          SMTP_HOST: ${{ secrets.SMTP_HOST }}
+          SMTP_PORT: ${{ secrets.SMTP_PORT }}
+          SMTP_SECURE: ${{ secrets.SMTP_SECURE }}
+          SMTP_USER: ${{ secrets.SMTP_USER }}
+          SMTP_PASSWORD: ${{ secrets.SMTP_PASSWORD }}
+          SITE_NAME: ${{ secrets.SITE_NAME }}
+        continue-on-error: true
+      
+      - name: Send email notification (on success)
+        if: success()
+        run: |
+          node -e "
+          const { sendBuildStatusEmail } = require('./_functions/email-notification.js');
+          sendBuildStatusEmail('success', 'CI pipeline completed successfully', {
+            'Workflow': '${{ github.workflow }}',
+            'Branch': '${{ github.ref }}',
+            'Commit': '${{ github.sha }}',
+            'Repository': '${{ github.repository }}',
+            'Run URL': '${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}'
+          });
+          "
+        env:
+          BUILD_STATUS_EMAIL_TO: ${{ secrets.BUILD_STATUS_EMAIL_TO }}
+          BUILD_STATUS_EMAIL_FROM: ${{ secrets.BUILD_STATUS_EMAIL_FROM }}
+          SENDGRID_API_KEY: ${{ secrets.SENDGRID_API_KEY }}
+          SMTP_HOST: ${{ secrets.SMTP_HOST }}
+          SMTP_PORT: ${{ secrets.SMTP_PORT }}
+          SMTP_SECURE: ${{ secrets.SMTP_SECURE }}
+          SMTP_USER: ${{ secrets.SMTP_USER }}
+          SMTP_PASSWORD: ${{ secrets.SMTP_PASSWORD }}
+          SITE_NAME: ${{ secrets.SITE_NAME }}
         continue-on-error: true
 
   deploy:
@@ -111,7 +161,7 @@ jobs:
           NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
           NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
       
-      - name: Send review queue notification
+      - name: Send review queue notification (Discord)
         run: |
           node -e "
           const { sendReviewQueue } = require('./_functions/discord-webhook.js');
@@ -122,5 +172,26 @@ jobs:
           "
         env:
           DISCORD_WEBHOOK_REVIEW_QUEUE: ${{ secrets.DISCORD_WEBHOOK_REVIEW_QUEUE }}
+        continue-on-error: true
+      
+      - name: Send deployment email notification
+        run: |
+          node -e "
+          const { sendDeploymentEmail } = require('./_functions/email-notification.js');
+          sendDeploymentEmail('https://${{ secrets.NETLIFY_SITE_ID }}.netlify.app', '${{ github.sha }}', {
+            'Repository': '${{ github.repository }}',
+            'Branch': '${{ github.ref }}'
+          });
+          "
+        env:
+          BUILD_STATUS_EMAIL_TO: ${{ secrets.BUILD_STATUS_EMAIL_TO }}
+          BUILD_STATUS_EMAIL_FROM: ${{ secrets.BUILD_STATUS_EMAIL_FROM }}
+          SENDGRID_API_KEY: ${{ secrets.SENDGRID_API_KEY }}
+          SMTP_HOST: ${{ secrets.SMTP_HOST }}
+          SMTP_PORT: ${{ secrets.SMTP_PORT }}
+          SMTP_SECURE: ${{ secrets.SMTP_SECURE }}
+          SMTP_USER: ${{ secrets.SMTP_USER }}
+          SMTP_PASSWORD: ${{ secrets.SMTP_PASSWORD }}
+          SITE_NAME: ${{ secrets.SITE_NAME }}
         continue-on-error: true
 

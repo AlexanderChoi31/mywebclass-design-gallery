@@ -82,6 +82,24 @@ AIRTABLE_API_KEY=your-api-key
 DISCORD_WEBHOOK_BUILD_STATUS=your-webhook-url
 DISCORD_WEBHOOK_SUBMISSIONS=your-webhook-url
 DISCORD_WEBHOOK_REVIEW_QUEUE=your-webhook-url
+
+# Email Notifications (for build status)
+# Option 1: SendGrid (recommended)
+SENDGRID_API_KEY=your-sendgrid-api-key
+BUILD_STATUS_EMAIL_TO=your-email@example.com
+BUILD_STATUS_EMAIL_FROM=verified-sender@example.com
+
+# Option 2: SMTP (Gmail, Mailgun, etc.)
+SMTP_HOST=smtp.gmail.com
+SMTP_PORT=587
+SMTP_SECURE=false
+SMTP_USER=your-email@gmail.com
+SMTP_PASSWORD=your-app-password
+BUILD_STATUS_EMAIL_TO=your-email@example.com
+BUILD_STATUS_EMAIL_FROM=your-email@gmail.com
+
+# Optional
+SITE_NAME=MyWebClass Design Gallery
 ```
 
 ### Discord Webhook Setup
@@ -93,6 +111,20 @@ DISCORD_WEBHOOK_REVIEW_QUEUE=your-webhook-url
    - `#submissions` - Form submission notifications
    - `#review-queue` - Review packet notifications
 4. Copy webhook URLs to `.env`
+
+### Email Notification Setup
+
+Email notifications are sent for build status (success/failure) and deployments.
+
+**Quick Setup (SendGrid - Recommended):**
+1. Sign up at https://signup.sendgrid.com/ (free tier: 100 emails/day)
+2. Create API key in SendGrid dashboard
+3. Add to GitHub Secrets:
+   - `SENDGRID_API_KEY`
+   - `BUILD_STATUS_EMAIL_TO` (your email)
+   - `BUILD_STATUS_EMAIL_FROM` (verified sender email)
+
+**For detailed setup instructions, see:** [EMAIL-SETUP-GUIDE.md](./EMAIL-SETUP-GUIDE.md)
 
 ## 📚 Documentation
 
