@@ -213,4 +213,3 @@ See `.env.example` for required environment variables:
 - CSS variables for efficient theme switching
 - Netlify CDN for global distribution
 - Lighthouse CI enforces performance thresholds
-

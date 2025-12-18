@@ -1,0 +1,2540 @@
+[
+  {
+    "iteration": 1,
+    "timestamp": "2025-12-18T15:43:26.102Z",
+    "assessments": [
+      {
+        "theme": "onyx",
+        "page": "homepage",
+        "pagePath": "/",
+        "timestamp": "2025-12-18T15:39:43.047Z",
+        "assessments": {
+          "spacing": {
+            "question": "Is it spaced properly?",
+            "score": 2.96875,
+            "answer": "Needs improvement - Only 32/32 containers have consistent spacing",
+            "details": {
+              "totalContainers": 32,
+              "consistentPadding": 32,
+              "hasVerticalSpacing": 6,
+              "consistencyScore": 5,
+              "spacingScore": 0.9375,
+              "overallScore": 2.96875,
+              "issues": []
+            }
+          },
+          "cleanliness": {
+            "question": "Is it clean?",
+            "score": 5,
+            "answer": "Yes - Clean, organized design with professional indicators",
+            "details": {
+              "hasHeader": true,
+              "hasFooter": true,
+              "hasNavigation": true,
+              "hasMain": true,
+              "hasSemanticHTML": true,
+              "hasMetaDescription": true,
+              "hasTitle": true,
+              "responsiveDesign": true,
+              "score": 5
+            }
+          },
+          "readability": {
+            "question": "Can users read easily? (Ensure color contrast nicely)",
+            "score": 0,
+            "answer": "Needs improvement - Only 0.0% meet WCAG AA, average: 2.78:1",
+            "details": {
+              "totalElements": 9,
+              "passingAA": 0,
+              "passingAAA": 0,
+              "aaPercentage": "0.0",
+              "aaaPercentage": "0.0",
+              "averageContrast": "2.78",
+              "score": 0,
+              "failingElements": [
+                {
+                  "element": "A",
+                  "contrast": 2.7750668044433198,
+                  "passesAA": false,
+                  "passesAAA": false,
+                  "textColor": "rgb(255, 255, 255)",
+                  "bgColor": "rgb(255, 107, 107)"
+                },
+                {
+                  "element": "A",
+                  "contrast": 2.7750668044433198,
+                  "passesAA": false,
+                  "passesAAA": false,
+                  "textColor": "rgb(255, 255, 255)",
+                  "bgColor": "rgb(255, 107, 107)"
+                },
+                {
+                  "element": "A",
+                  "contrast": 2.7750668044433198,
+                  "passesAA": false,
+                  "passesAAA": false,
+                  "textColor": "rgb(255, 255, 255)",
+                  "bgColor": "rgb(255, 107, 107)"
+                },
+                {
+                  "element": "A",
+                  "contrast": 2.7750668044433198,
+                  "passesAA": false,
+                  "passesAAA": false,
+                  "textColor": "rgb(255, 255, 255)",
+                  "bgColor": "rgb(255, 107, 107)"
+                },
+                {
+                  "element": "A",
+                  "contrast": 2.7750668044433198,
+                  "passesAA": false,
+                  "passesAAA": false,
+                  "textColor": "rgb(255, 255, 255)",
+                  "bgColor": "rgb(255, 107, 107)"
+                },
+                {
+                  "element": "A",
+                  "contrast": 2.7750668044433198,
+                  "passesAA": false,
+                  "passesAAA": false,
+                  "textColor": "rgb(255, 255, 255)",
+                  "bgColor": "rgb(255, 107, 107)"
+                },
+                {
+                  "element": "A",
+                  "contrast": 2.7750668044433198,
+                  "passesAA": false,
+                  "passesAAA": false,
+                  "textColor": "rgb(255, 255, 255)",
+                  "bgColor": "rgb(255, 107, 107)"
+                },
+                {
+                  "element": "A",
+                  "contrast": 2.7750668044433198,
+                  "passesAA": false,
+                  "passesAAA": false,
+                  "textColor": "rgb(255, 255, 255)",
+                  "bgColor": "rgb(255, 107, 107)"
+                },
+                {
+                  "element": "BUTTON",
+                  "contrast": 2.7750668044433198,
+                  "passesAA": false,
+                  "passesAAA": false,
+                  "textColor": "rgb(255, 255, 255)",
+                  "bgColor": "rgb(255, 107, 107)"
+                }
+              ]
+            }
+          },
+          "professionalism": {
+            "question": "Do the designs have a mark of professionalism to them?",
+            "score": 5,
+            "answer": "Yes - Professional design patterns present",
+            "details": {
+              "hasHeader": true,
+              "hasFooter": true,
+              "hasNavigation": true,
+              "hasMain": true,
+              "hasSemanticHTML": true,
+              "hasMetaDescription": true,
+              "hasTitle": true,
+              "responsiveDesign": true,
+              "score": 5
+            }
+          },
+          "typography": {
+            "question": "Is typography hierarchy clear?",
+            "score": 5,
+            "answer": "Yes - Clear hierarchy with proper heading structure",
+            "details": {
+              "hasProperHierarchy": true,
+              "hasMultipleLevels": true,
+              "hasSizeHierarchy": true,
+              "score": 5
+            }
+          }
+        },
+        "overallScore": 2.99,
+        "needsImprovement": true
+      },
+      {
+        "theme": "onyx",
+        "page": "themes-index",
+        "pagePath": "/themes/",
+        "timestamp": "2025-12-18T15:40:02.173Z",
+        "assessments": {
+          "spacing": {
+            "question": "Is it spaced properly?",
+            "score": 2.727272727272727,
+            "answer": "Needs improvement - Only 11/11 containers have consistent spacing",
+            "details": {
+              "totalContainers": 11,
+              "consistentPadding": 11,
+              "hasVerticalSpacing": 1,
+              "consistencyScore": 5,
+              "spacingScore": 0.4545454545454546,
+              "overallScore": 2.727272727272727,
+              "issues": []
+            }
+          },
+          "cleanliness": {
+            "question": "Is it clean?",
+            "score": 5,
+            "answer": "Yes - Clean, organized design with professional indicators",
+            "details": {
+              "hasHeader": true,
+              "hasFooter": true,
+              "hasNavigation": true,
+              "hasMain": true,
+              "hasSemanticHTML": true,
+              "hasMetaDescription": true,
+              "hasTitle": true,
+              "responsiveDesign": true,
+              "score": 5
+            }
+          },
+          "readability": {
+            "question": "Can users read easily? (Ensure color contrast nicely)",
+            "score": 0,
+            "answer": "Needs improvement - Only 0.0% meet WCAG AA, average: 2.78:1",
+            "details": {
+              "totalElements": 7,
+              "passingAA": 0,
+              "passingAAA": 0,
+              "aaPercentage": "0.0",
+              "aaaPercentage": "0.0",
+              "averageContrast": "2.78",
+              "score": 0,
+              "failingElements": [
+                {
+                  "element": "A",
+                  "contrast": 2.7750668044433198,
+                  "passesAA": false,
+                  "passesAAA": false,
+                  "textColor": "rgb(255, 255, 255)",
+                  "bgColor": "rgb(255, 107, 107)"
+                },
+                {
+                  "element": "A",
+                  "contrast": 2.7750668044433198,
+                  "passesAA": false,
+                  "passesAAA": false,
+                  "textColor": "rgb(255, 255, 255)",
+                  "bgColor": "rgb(255, 107, 107)"
+                },
+                {
+                  "element": "A",
+                  "contrast": 2.7750668044433198,
+                  "passesAA": false,
+                  "passesAAA": false,
+                  "textColor": "rgb(255, 255, 255)",
+                  "bgColor": "rgb(255, 107, 107)"
+                },
+                {
+                  "element": "A",
+                  "contrast": 2.7750668044433198,
+                  "passesAA": false,
+                  "passesAAA": false,
+                  "textColor": "rgb(255, 255, 255)",
+                  "bgColor": "rgb(255, 107, 107)"
+                },
+                {
+                  "element": "A",
+                  "contrast": 2.7750668044433198,
+                  "passesAA": false,
+                  "passesAAA": false,
+                  "textColor": "rgb(255, 255, 255)",
+                  "bgColor": "rgb(255, 107, 107)"
+                },
+                {
+                  "element": "A",
+                  "contrast": 2.7750668044433198,
+                  "passesAA": false,
+                  "passesAAA": false,
+                  "textColor": "rgb(255, 255, 255)",
+                  "bgColor": "rgb(255, 107, 107)"
+                },
+                {
+                  "element": "BUTTON",
+                  "contrast": 2.7750668044433198,
+                  "passesAA": false,
+                  "passesAAA": false,
+                  "textColor": "rgb(255, 255, 255)",
+                  "bgColor": "rgb(255, 107, 107)"
+                }
+              ]
+            }
+          },
+          "professionalism": {
+            "question": "Do the designs have a mark of professionalism to them?",
+            "score": 5,
+            "answer": "Yes - Professional design patterns present",
+            "details": {
+              "hasHeader": true,
+              "hasFooter": true,
+              "hasNavigation": true,
+              "hasMain": true,
+              "hasSemanticHTML": true,
+              "hasMetaDescription": true,
+              "hasTitle": true,
+              "responsiveDesign": true,
+              "score": 5
+            }
+          },
+          "typography": {
+            "question": "Is typography hierarchy clear?",
+            "score": 5,
+            "answer": "Yes - Clear hierarchy with proper heading structure",
+            "details": {
+              "hasProperHierarchy": true,
+              "hasMultipleLevels": true,
+              "hasSizeHierarchy": true,
+              "score": 5
+            }
+          }
+        },
+        "overallScore": 2.93,
+        "needsImprovement": true
+      },
+      {
+        "theme": "paper",
+        "page": "homepage",
+        "pagePath": "/",
+        "timestamp": "2025-12-18T15:40:21.125Z",
+        "assessments": {
+          "spacing": {
+            "question": "Is it spaced properly?",
+            "score": 2.96875,
+            "answer": "Needs improvement - Only 32/32 containers have consistent spacing",
+            "details": {
+              "totalContainers": 32,
+              "consistentPadding": 32,
+              "hasVerticalSpacing": 6,
+              "consistencyScore": 5,
+              "spacingScore": 0.9375,
+              "overallScore": 2.96875,
+              "issues": []
+            }
+          },
+          "cleanliness": {
+            "question": "Is it clean?",
+            "score": 5,
+            "answer": "Yes - Clean, organized design with professional indicators",
+            "details": {
+              "hasHeader": true,
+              "hasFooter": true,
+              "hasNavigation": true,
+              "hasMain": true,
+              "hasSemanticHTML": true,
+              "hasMetaDescription": true,
+              "hasTitle": true,
+              "responsiveDesign": true,
+              "score": 5
+            }
+          },
+          "readability": {
+            "question": "Can users read easily? (Ensure color contrast nicely)",
+            "score": 0,
+            "answer": "Needs improvement - Only 0.0% meet WCAG AA, average: 0.00:1",
+            "details": {
+              "totalElements": 1,
+              "passingAA": 0,
+              "passingAAA": 0,
+              "aaPercentage": "0.0",
+              "aaaPercentage": "0.0",
+              "averageContrast": "0.00",
+              "score": 0,
+              "failingElements": []
+            }
+          },
+          "professionalism": {
+            "question": "Do the designs have a mark of professionalism to them?",
+            "score": 5,
+            "answer": "Yes - Professional design patterns present",
+            "details": {
+              "hasHeader": true,
+              "hasFooter": true,
+              "hasNavigation": true,
+              "hasMain": true,
+              "hasSemanticHTML": true,
+              "hasMetaDescription": true,
+              "hasTitle": true,
+              "responsiveDesign": true,
+              "score": 5
+            }
+          },
+          "typography": {
+            "question": "Is typography hierarchy clear?",
+            "score": 5,
+            "answer": "Yes - Clear hierarchy with proper heading structure",
+            "details": {
+              "hasProperHierarchy": true,
+              "hasMultipleLevels": true,
+              "hasSizeHierarchy": true,
+              "score": 5
+            }
+          }
+        },
+        "overallScore": 2.99,
+        "needsImprovement": true
+      },
+      {
+        "theme": "paper",
+        "page": "themes-index",
+        "pagePath": "/themes/",
+        "timestamp": "2025-12-18T15:40:40.032Z",
+        "assessments": {
+          "spacing": {
+            "question": "Is it spaced properly?",
+            "score": 2.727272727272727,
+            "answer": "Needs improvement - Only 11/11 containers have consistent spacing",
+            "details": {
+              "totalContainers": 11,
+              "consistentPadding": 11,
+              "hasVerticalSpacing": 1,
+              "consistencyScore": 5,
+              "spacingScore": 0.4545454545454546,
+              "overallScore": 2.727272727272727,
+              "issues": []
+            }
+          },
+          "cleanliness": {
+            "question": "Is it clean?",
+            "score": 5,
+            "answer": "Yes - Clean, organized design with professional indicators",
+            "details": {
+              "hasHeader": true,
+              "hasFooter": true,
+              "hasNavigation": true,
+              "hasMain": true,
+              "hasSemanticHTML": true,
+              "hasMetaDescription": true,
+              "hasTitle": true,
+              "responsiveDesign": true,
+              "score": 5
+            }
+          },
+          "readability": {
+            "question": "Can users read easily? (Ensure color contrast nicely)",
+            "score": 0,
+            "answer": "Needs improvement - Only 0.0% meet WCAG AA, average: 0.00:1",
+            "details": {
+              "totalElements": 1,
+              "passingAA": 0,
+              "passingAAA": 0,
+              "aaPercentage": "0.0",
+              "aaaPercentage": "0.0",
+              "averageContrast": "0.00",
+              "score": 0,
+              "failingElements": []
+            }
+          },
+          "professionalism": {
+            "question": "Do the designs have a mark of professionalism to them?",
+            "score": 5,
+            "answer": "Yes - Professional design patterns present",
+            "details": {
+              "hasHeader": true,
+              "hasFooter": true,
+              "hasNavigation": true,
+              "hasMain": true,
+              "hasSemanticHTML": true,
+              "hasMetaDescription": true,
+              "hasTitle": true,
+              "responsiveDesign": true,
+              "score": 5
+            }
+          },
+          "typography": {
+            "question": "Is typography hierarchy clear?",
+            "score": 5,
+            "answer": "Yes - Clear hierarchy with proper heading structure",
+            "details": {
+              "hasProperHierarchy": true,
+              "hasMultipleLevels": true,
+              "hasSizeHierarchy": true,
+              "score": 5
+            }
+          }
+        },
+        "overallScore": 2.93,
+        "needsImprovement": true
+      },
+      {
+        "theme": "neon",
+        "page": "homepage",
+        "pagePath": "/",
+        "timestamp": "2025-12-18T15:40:58.489Z",
+        "assessments": {
+          "spacing": {
+            "question": "Is it spaced properly?",
+            "score": 2.96875,
+            "answer": "Needs improvement - Only 32/32 containers have consistent spacing",
+            "details": {
+              "totalContainers": 32,
+              "consistentPadding": 32,
+              "hasVerticalSpacing": 6,
+              "consistencyScore": 5,
+              "spacingScore": 0.9375,
+              "overallScore": 2.96875,
+              "issues": []
+            }
+          },
+          "cleanliness": {
+            "question": "Is it clean?",
+            "score": 5,
+            "answer": "Yes - Clean, organized design with professional indicators",
+            "details": {
+              "hasHeader": true,
+              "hasFooter": true,
+              "hasNavigation": true,
+              "hasMain": true,
+              "hasSemanticHTML": true,
+              "hasMetaDescription": true,
+              "hasTitle": true,
+              "responsiveDesign": true,
+              "score": 5
+            }
+          },
+          "readability": {
+            "question": "Can users read easily? (Ensure color contrast nicely)",
+            "score": 0,
+            "answer": "Needs improvement - Only 0.0% meet WCAG AA, average: 1.00:1",
+            "details": {
+              "totalElements": 11,
+              "passingAA": 0,
+              "passingAAA": 0,
+              "aaPercentage": "0.0",
+              "aaaPercentage": "0.0",
+              "averageContrast": "1.00",
+              "score": 0,
+              "failingElements": [
+                {
+                  "element": "A",
+                  "contrast": 1,
+                  "passesAA": false,
+                  "passesAAA": false,
+                  "textColor": "rgb(0, 255, 136)",
+                  "bgColor": "rgba(0, 255, 136, 0.1)"
+                },
+                {
+                  "element": "A",
+                  "contrast": 1,
+                  "passesAA": false,
+                  "passesAAA": false,
+                  "textColor": "rgb(0, 255, 136)",
+                  "bgColor": "rgba(0, 255, 136, 0.1)"
+                },
+                {
+                  "element": "A",
+                  "contrast": 1,
+                  "passesAA": false,
+                  "passesAAA": false,
+                  "textColor": "rgb(0, 255, 136)",
+                  "bgColor": "rgba(0, 255, 136, 0.1)"
+                },
+                {
+                  "element": "A",
+                  "contrast": 1,
+                  "passesAA": false,
+                  "passesAAA": false,
+                  "textColor": "rgb(0, 255, 136)",
+                  "bgColor": "rgba(0, 255, 136, 0.1)"
+                },
+                {
+                  "element": "A",
+                  "contrast": 1,
+                  "passesAA": false,
+                  "passesAAA": false,
+                  "textColor": "rgb(0, 255, 136)",
+                  "bgColor": "rgba(0, 255, 136, 0.1)"
+                },
+                {
+                  "element": "A",
+                  "contrast": 1,
+                  "passesAA": false,
+                  "passesAAA": false,
+                  "textColor": "rgb(0, 255, 136)",
+                  "bgColor": "rgba(0, 255, 136, 0.1)"
+                },
+                {
+                  "element": "A",
+                  "contrast": 1,
+                  "passesAA": false,
+                  "passesAAA": false,
+                  "textColor": "rgb(0, 255, 136)",
+                  "bgColor": "rgba(0, 255, 136, 0.1)"
+                },
+                {
+                  "element": "A",
+                  "contrast": 1,
+                  "passesAA": false,
+                  "passesAAA": false,
+                  "textColor": "rgb(0, 255, 136)",
+                  "bgColor": "rgba(0, 255, 136, 0.1)"
+                },
+                {
+                  "element": "A",
+                  "contrast": 1,
+                  "passesAA": false,
+                  "passesAAA": false,
+                  "textColor": "rgb(0, 255, 136)",
+                  "bgColor": "rgba(0, 255, 136, 0.1)"
+                },
+                {
+                  "element": "BUTTON",
+                  "contrast": 1,
+                  "passesAA": false,
+                  "passesAAA": false,
+                  "textColor": "rgb(0, 255, 136)",
+                  "bgColor": "rgba(0, 255, 136, 0.1)"
+                }
+              ]
+            }
+          },
+          "professionalism": {
+            "question": "Do the designs have a mark of professionalism to them?",
+            "score": 5,
+            "answer": "Yes - Professional design patterns present",
+            "details": {
+              "hasHeader": true,
+              "hasFooter": true,
+              "hasNavigation": true,
+              "hasMain": true,
+              "hasSemanticHTML": true,
+              "hasMetaDescription": true,
+              "hasTitle": true,
+              "responsiveDesign": true,
+              "score": 5
+            }
+          },
+          "typography": {
+            "question": "Is typography hierarchy clear?",
+            "score": 5,
+            "answer": "Yes - Clear hierarchy with proper heading structure",
+            "details": {
+              "hasProperHierarchy": true,
+              "hasMultipleLevels": true,
+              "hasSizeHierarchy": true,
+              "score": 5
+            }
+          }
+        },
+        "overallScore": 2.99,
+        "needsImprovement": true
+      },
+      {
+        "theme": "neon",
+        "page": "themes-index",
+        "pagePath": "/themes/",
+        "timestamp": "2025-12-18T15:41:17.697Z",
+        "assessments": {
+          "spacing": {
+            "question": "Is it spaced properly?",
+            "score": 2.727272727272727,
+            "answer": "Needs improvement - Only 11/11 containers have consistent spacing",
+            "details": {
+              "totalContainers": 11,
+              "consistentPadding": 11,
+              "hasVerticalSpacing": 1,
+              "consistencyScore": 5,
+              "spacingScore": 0.4545454545454546,
+              "overallScore": 2.727272727272727,
+              "issues": []
+            }
+          },
+          "cleanliness": {
+            "question": "Is it clean?",
+            "score": 5,
+            "answer": "Yes - Clean, organized design with professional indicators",
+            "details": {
+              "hasHeader": true,
+              "hasFooter": true,
+              "hasNavigation": true,
+              "hasMain": true,
+              "hasSemanticHTML": true,
+              "hasMetaDescription": true,
+              "hasTitle": true,
+              "responsiveDesign": true,
+              "score": 5
+            }
+          },
+          "readability": {
+            "question": "Can users read easily? (Ensure color contrast nicely)",
+            "score": 0,
+            "answer": "Needs improvement - Only 0.0% meet WCAG AA, average: 1.00:1",
+            "details": {
+              "totalElements": 8,
+              "passingAA": 0,
+              "passingAAA": 0,
+              "aaPercentage": "0.0",
+              "aaaPercentage": "0.0",
+              "averageContrast": "1.00",
+              "score": 0,
+              "failingElements": [
+                {
+                  "element": "A",
+                  "contrast": 1,
+                  "passesAA": false,
+                  "passesAAA": false,
+                  "textColor": "rgb(0, 255, 136)",
+                  "bgColor": "rgba(0, 255, 136, 0.1)"
+                },
+                {
+                  "element": "A",
+                  "contrast": 1,
+                  "passesAA": false,
+                  "passesAAA": false,
+                  "textColor": "rgb(0, 255, 136)",
+                  "bgColor": "rgba(0, 255, 136, 0.1)"
+                },
+                {
+                  "element": "A",
+                  "contrast": 1,
+                  "passesAA": false,
+                  "passesAAA": false,
+                  "textColor": "rgb(0, 255, 136)",
+                  "bgColor": "rgba(0, 255, 136, 0.1)"
+                },
+                {
+                  "element": "A",
+                  "contrast": 1,
+                  "passesAA": false,
+                  "passesAAA": false,
+                  "textColor": "rgb(0, 255, 136)",
+                  "bgColor": "rgba(0, 255, 136, 0.1)"
+                },
+                {
+                  "element": "A",
+                  "contrast": 1,
+                  "passesAA": false,
+                  "passesAAA": false,
+                  "textColor": "rgb(0, 255, 136)",
+                  "bgColor": "rgba(0, 255, 136, 0.1)"
+                },
+                {
+                  "element": "A",
+                  "contrast": 1,
+                  "passesAA": false,
+                  "passesAAA": false,
+                  "textColor": "rgb(0, 255, 136)",
+                  "bgColor": "rgba(0, 255, 136, 0.1)"
+                },
+                {
+                  "element": "BUTTON",
+                  "contrast": 1,
+                  "passesAA": false,
+                  "passesAAA": false,
+                  "textColor": "rgb(0, 255, 136)",
+                  "bgColor": "rgba(0, 255, 136, 0.1)"
+                },
+                {
+                  "element": "BUTTON",
+                  "contrast": 1,
+                  "passesAA": false,
+                  "passesAAA": false,
+                  "textColor": "rgb(0, 255, 136)",
+                  "bgColor": "rgba(0, 255, 136, 0.1)"
+                }
+              ]
+            }
+          },
+          "professionalism": {
+            "question": "Do the designs have a mark of professionalism to them?",
+            "score": 5,
+            "answer": "Yes - Professional design patterns present",
+            "details": {
+              "hasHeader": true,
+              "hasFooter": true,
+              "hasNavigation": true,
+              "hasMain": true,
+              "hasSemanticHTML": true,
+              "hasMetaDescription": true,
+              "hasTitle": true,
+              "responsiveDesign": true,
+              "score": 5
+            }
+          },
+          "typography": {
+            "question": "Is typography hierarchy clear?",
+            "score": 5,
+            "answer": "Yes - Clear hierarchy with proper heading structure",
+            "details": {
+              "hasProperHierarchy": true,
+              "hasMultipleLevels": true,
+              "hasSizeHierarchy": true,
+              "score": 5
+            }
+          }
+        },
+        "overallScore": 2.93,
+        "needsImprovement": true
+      },
+      {
+        "theme": "brutal",
+        "page": "homepage",
+        "pagePath": "/",
+        "timestamp": "2025-12-18T15:41:36.086Z",
+        "assessments": {
+          "spacing": {
+            "question": "Is it spaced properly?",
+            "score": 3.046875,
+            "answer": "Needs improvement - Only 32/32 containers have consistent spacing",
+            "details": {
+              "totalContainers": 32,
+              "consistentPadding": 32,
+              "hasVerticalSpacing": 7,
+              "consistencyScore": 5,
+              "spacingScore": 1.09375,
+              "overallScore": 3.046875,
+              "issues": []
+            }
+          },
+          "cleanliness": {
+            "question": "Is it clean?",
+            "score": 5,
+            "answer": "Yes - Clean, organized design with professional indicators",
+            "details": {
+              "hasHeader": true,
+              "hasFooter": true,
+              "hasNavigation": true,
+              "hasMain": true,
+              "hasSemanticHTML": true,
+              "hasMetaDescription": true,
+              "hasTitle": true,
+              "responsiveDesign": true,
+              "score": 5
+            }
+          },
+          "readability": {
+            "question": "Can users read easily? (Ensure color contrast nicely)",
+            "score": 0,
+            "answer": "Needs improvement - Only 0.0% meet WCAG AA, average: 0.00:1",
+            "details": {
+              "totalElements": 1,
+              "passingAA": 0,
+              "passingAAA": 0,
+              "aaPercentage": "0.0",
+              "aaaPercentage": "0.0",
+              "averageContrast": "0.00",
+              "score": 0,
+              "failingElements": []
+            }
+          },
+          "professionalism": {
+            "question": "Do the designs have a mark of professionalism to them?",
+            "score": 5,
+            "answer": "Yes - Professional design patterns present",
+            "details": {
+              "hasHeader": true,
+              "hasFooter": true,
+              "hasNavigation": true,
+              "hasMain": true,
+              "hasSemanticHTML": true,
+              "hasMetaDescription": true,
+              "hasTitle": true,
+              "responsiveDesign": true,
+              "score": 5
+            }
+          },
+          "typography": {
+            "question": "Is typography hierarchy clear?",
+            "score": 5,
+            "answer": "Yes - Clear hierarchy with proper heading structure",
+            "details": {
+              "hasProperHierarchy": true,
+              "hasMultipleLevels": true,
+              "hasSizeHierarchy": true,
+              "score": 5
+            }
+          }
+        },
+        "overallScore": 3.01,
+        "needsImprovement": true
+      },
+      {
+        "theme": "brutal",
+        "page": "themes-index",
+        "pagePath": "/themes/",
+        "timestamp": "2025-12-18T15:41:55.064Z",
+        "assessments": {
+          "spacing": {
+            "question": "Is it spaced properly?",
+            "score": 2.9545454545454546,
+            "answer": "Needs improvement - Only 11/11 containers have consistent spacing",
+            "details": {
+              "totalContainers": 11,
+              "consistentPadding": 11,
+              "hasVerticalSpacing": 2,
+              "consistencyScore": 5,
+              "spacingScore": 0.9090909090909092,
+              "overallScore": 2.9545454545454546,
+              "issues": []
+            }
+          },
+          "cleanliness": {
+            "question": "Is it clean?",
+            "score": 5,
+            "answer": "Yes - Clean, organized design with professional indicators",
+            "details": {
+              "hasHeader": true,
+              "hasFooter": true,
+              "hasNavigation": true,
+              "hasMain": true,
+              "hasSemanticHTML": true,
+              "hasMetaDescription": true,
+              "hasTitle": true,
+              "responsiveDesign": true,
+              "score": 5
+            }
+          },
+          "readability": {
+            "question": "Can users read easily? (Ensure color contrast nicely)",
+            "score": 0,
+            "answer": "Needs improvement - Only 0.0% meet WCAG AA, average: 0.00:1",
+            "details": {
+              "totalElements": 1,
+              "passingAA": 0,
+              "passingAAA": 0,
+              "aaPercentage": "0.0",
+              "aaaPercentage": "0.0",
+              "averageContrast": "0.00",
+              "score": 0,
+              "failingElements": []
+            }
+          },
+          "professionalism": {
+            "question": "Do the designs have a mark of professionalism to them?",
+            "score": 5,
+            "answer": "Yes - Professional design patterns present",
+            "details": {
+              "hasHeader": true,
+              "hasFooter": true,
+              "hasNavigation": true,
+              "hasMain": true,
+              "hasSemanticHTML": true,
+              "hasMetaDescription": true,
+              "hasTitle": true,
+              "responsiveDesign": true,
+              "score": 5
+            }
+          },
+          "typography": {
+            "question": "Is typography hierarchy clear?",
+            "score": 5,
+            "answer": "Yes - Clear hierarchy with proper heading structure",
+            "details": {
+              "hasProperHierarchy": true,
+              "hasMultipleLevels": true,
+              "hasSizeHierarchy": true,
+              "score": 5
+            }
+          }
+        },
+        "overallScore": 2.99,
+        "needsImprovement": true
+      },
+      {
+        "theme": "calm",
+        "page": "homepage",
+        "pagePath": "/",
+        "timestamp": "2025-12-18T15:42:13.418Z",
+        "assessments": {
+          "spacing": {
+            "question": "Is it spaced properly?",
+            "score": 2.96875,
+            "answer": "Needs improvement - Only 32/32 containers have consistent spacing",
+            "details": {
+              "totalContainers": 32,
+              "consistentPadding": 32,
+              "hasVerticalSpacing": 6,
+              "consistencyScore": 5,
+              "spacingScore": 0.9375,
+              "overallScore": 2.96875,
+              "issues": []
+            }
+          },
+          "cleanliness": {
+            "question": "Is it clean?",
+            "score": 5,
+            "answer": "Yes - Clean, organized design with professional indicators",
+            "details": {
+              "hasHeader": true,
+              "hasFooter": true,
+              "hasNavigation": true,
+              "hasMain": true,
+              "hasSemanticHTML": true,
+              "hasMetaDescription": true,
+              "hasTitle": true,
+              "responsiveDesign": true,
+              "score": 5
+            }
+          },
+          "readability": {
+            "question": "Can users read easily? (Ensure color contrast nicely)",
+            "score": 5,
+            "answer": "Yes - 100.0% of text elements meet WCAG AA contrast (4.5:1), average: 5.34:1",
+            "details": {
+              "totalElements": 9,
+              "passingAA": 9,
+              "passingAAA": 0,
+              "aaPercentage": "100.0",
+              "aaaPercentage": "0.0",
+              "averageContrast": "5.34",
+              "score": 5,
+              "failingElements": []
+            }
+          },
+          "professionalism": {
+            "question": "Do the designs have a mark of professionalism to them?",
+            "score": 5,
+            "answer": "Yes - Professional design patterns present",
+            "details": {
+              "hasHeader": true,
+              "hasFooter": true,
+              "hasNavigation": true,
+              "hasMain": true,
+              "hasSemanticHTML": true,
+              "hasMetaDescription": true,
+              "hasTitle": true,
+              "responsiveDesign": true,
+              "score": 5
+            }
+          },
+          "typography": {
+            "question": "Is typography hierarchy clear?",
+            "score": 5,
+            "answer": "Yes - Clear hierarchy with proper heading structure",
+            "details": {
+              "hasProperHierarchy": true,
+              "hasMultipleLevels": true,
+              "hasSizeHierarchy": true,
+              "score": 5
+            }
+          }
+        },
+        "overallScore": 4.49,
+        "needsImprovement": true
+      },
+      {
+        "theme": "calm",
+        "page": "themes-index",
+        "pagePath": "/themes/",
+        "timestamp": "2025-12-18T15:42:32.300Z",
+        "assessments": {
+          "spacing": {
+            "question": "Is it spaced properly?",
+            "score": 2.727272727272727,
+            "answer": "Needs improvement - Only 11/11 containers have consistent spacing",
+            "details": {
+              "totalContainers": 11,
+              "consistentPadding": 11,
+              "hasVerticalSpacing": 1,
+              "consistencyScore": 5,
+              "spacingScore": 0.4545454545454546,
+              "overallScore": 2.727272727272727,
+              "issues": []
+            }
+          },
+          "cleanliness": {
+            "question": "Is it clean?",
+            "score": 5,
+            "answer": "Yes - Clean, organized design with professional indicators",
+            "details": {
+              "hasHeader": true,
+              "hasFooter": true,
+              "hasNavigation": true,
+              "hasMain": true,
+              "hasSemanticHTML": true,
+              "hasMetaDescription": true,
+              "hasTitle": true,
+              "responsiveDesign": true,
+              "score": 5
+            }
+          },
+          "readability": {
+            "question": "Can users read easily? (Ensure color contrast nicely)",
+            "score": 5,
+            "answer": "Yes - 100.0% of text elements meet WCAG AA contrast (4.5:1), average: 5.34:1",
+            "details": {
+              "totalElements": 7,
+              "passingAA": 7,
+              "passingAAA": 0,
+              "aaPercentage": "100.0",
+              "aaaPercentage": "0.0",
+              "averageContrast": "5.34",
+              "score": 5,
+              "failingElements": []
+            }
+          },
+          "professionalism": {
+            "question": "Do the designs have a mark of professionalism to them?",
+            "score": 5,
+            "answer": "Yes - Professional design patterns present",
+            "details": {
+              "hasHeader": true,
+              "hasFooter": true,
+              "hasNavigation": true,
+              "hasMain": true,
+              "hasSemanticHTML": true,
+              "hasMetaDescription": true,
+              "hasTitle": true,
+              "responsiveDesign": true,
+              "score": 5
+            }
+          },
+          "typography": {
+            "question": "Is typography hierarchy clear?",
+            "score": 5,
+            "answer": "Yes - Clear hierarchy with proper heading structure",
+            "details": {
+              "hasProperHierarchy": true,
+              "hasMultipleLevels": true,
+              "hasSizeHierarchy": true,
+              "score": 5
+            }
+          }
+        },
+        "overallScore": 4.43,
+        "needsImprovement": true
+      },
+      {
+        "theme": "royal",
+        "page": "homepage",
+        "pagePath": "/",
+        "timestamp": "2025-12-18T15:42:50.682Z",
+        "assessments": {
+          "spacing": {
+            "question": "Is it spaced properly?",
+            "score": 2.96875,
+            "answer": "Needs improvement - Only 32/32 containers have consistent spacing",
+            "details": {
+              "totalContainers": 32,
+              "consistentPadding": 32,
+              "hasVerticalSpacing": 6,
+              "consistencyScore": 5,
+              "spacingScore": 0.9375,
+              "overallScore": 2.96875,
+              "issues": []
+            }
+          },
+          "cleanliness": {
+            "question": "Is it clean?",
+            "score": 5,
+            "answer": "Yes - Clean, organized design with professional indicators",
+            "details": {
+              "hasHeader": true,
+              "hasFooter": true,
+              "hasNavigation": true,
+              "hasMain": true,
+              "hasSemanticHTML": true,
+              "hasMetaDescription": true,
+              "hasTitle": true,
+              "responsiveDesign": true,
+              "score": 5
+            }
+          },
+          "readability": {
+            "question": "Can users read easily? (Ensure color contrast nicely)",
+            "score": 0,
+            "answer": "Needs improvement - Only 0.0% meet WCAG AA, average: 0.00:1",
+            "details": {
+              "totalElements": 1,
+              "passingAA": 0,
+              "passingAAA": 0,
+              "aaPercentage": "0.0",
+              "aaaPercentage": "0.0",
+              "averageContrast": "0.00",
+              "score": 0,
+              "failingElements": []
+            }
+          },
+          "professionalism": {
+            "question": "Do the designs have a mark of professionalism to them?",
+            "score": 5,
+            "answer": "Yes - Professional design patterns present",
+            "details": {
+              "hasHeader": true,
+              "hasFooter": true,
+              "hasNavigation": true,
+              "hasMain": true,
+              "hasSemanticHTML": true,
+              "hasMetaDescription": true,
+              "hasTitle": true,
+              "responsiveDesign": true,
+              "score": 5
+            }
+          },
+          "typography": {
+            "question": "Is typography hierarchy clear?",
+            "score": 5,
+            "answer": "Yes - Clear hierarchy with proper heading structure",
+            "details": {
+              "hasProperHierarchy": true,
+              "hasMultipleLevels": true,
+              "hasSizeHierarchy": true,
+              "score": 5
+            }
+          }
+        },
+        "overallScore": 2.99,
+        "needsImprovement": true
+      },
+      {
+        "theme": "royal",
+        "page": "themes-index",
+        "pagePath": "/themes/",
+        "timestamp": "2025-12-18T15:43:09.950Z",
+        "assessments": {
+          "spacing": {
+            "question": "Is it spaced properly?",
+            "score": 2.727272727272727,
+            "answer": "Needs improvement - Only 11/11 containers have consistent spacing",
+            "details": {
+              "totalContainers": 11,
+              "consistentPadding": 11,
+              "hasVerticalSpacing": 1,
+              "consistencyScore": 5,
+              "spacingScore": 0.4545454545454546,
+              "overallScore": 2.727272727272727,
+              "issues": []
+            }
+          },
+          "cleanliness": {
+            "question": "Is it clean?",
+            "score": 5,
+            "answer": "Yes - Clean, organized design with professional indicators",
+            "details": {
+              "hasHeader": true,
+              "hasFooter": true,
+              "hasNavigation": true,
+              "hasMain": true,
+              "hasSemanticHTML": true,
+              "hasMetaDescription": true,
+              "hasTitle": true,
+              "responsiveDesign": true,
+              "score": 5
+            }
+          },
+          "readability": {
+            "question": "Can users read easily? (Ensure color contrast nicely)",
+            "score": 0,
+            "answer": "Needs improvement - Only 0.0% meet WCAG AA, average: 0.00:1",
+            "details": {
+              "totalElements": 1,
+              "passingAA": 0,
+              "passingAAA": 0,
+              "aaPercentage": "0.0",
+              "aaaPercentage": "0.0",
+              "averageContrast": "0.00",
+              "score": 0,
+              "failingElements": []
+            }
+          },
+          "professionalism": {
+            "question": "Do the designs have a mark of professionalism to them?",
+            "score": 5,
+            "answer": "Yes - Professional design patterns present",
+            "details": {
+              "hasHeader": true,
+              "hasFooter": true,
+              "hasNavigation": true,
+              "hasMain": true,
+              "hasSemanticHTML": true,
+              "hasMetaDescription": true,
+              "hasTitle": true,
+              "responsiveDesign": true,
+              "score": 5
+            }
+          },
+          "typography": {
+            "question": "Is typography hierarchy clear?",
+            "score": 5,
+            "answer": "Yes - Clear hierarchy with proper heading structure",
+            "details": {
+              "hasProperHierarchy": true,
+              "hasMultipleLevels": true,
+              "hasSizeHierarchy": true,
+              "score": 5
+            }
+          }
+        },
+        "overallScore": 2.93,
+        "needsImprovement": true
+      }
+    ],
+    "averageScore": 3.2166666666666672,
+    "minimumScore": 2.93,
+    "issuesFound": 12
+  },
+  {
+    "iteration": 2,
+    "timestamp": "2025-12-18T15:47:11.334Z",
+    "assessments": [
+      {
+        "theme": "onyx",
+        "page": "homepage",
+        "pagePath": "/",
+        "timestamp": "2025-12-18T15:43:28.447Z",
+        "assessments": {
+          "spacing": {
+            "question": "Is it spaced properly?",
+            "score": 2.96875,
+            "answer": "Needs improvement - Only 32/32 containers have consistent spacing",
+            "details": {
+              "totalContainers": 32,
+              "consistentPadding": 32,
+              "hasVerticalSpacing": 6,
+              "consistencyScore": 5,
+              "spacingScore": 0.9375,
+              "overallScore": 2.96875,
+              "issues": []
+            }
+          },
+          "cleanliness": {
+            "question": "Is it clean?",
+            "score": 5,
+            "answer": "Yes - Clean, organized design with professional indicators",
+            "details": {
+              "hasHeader": true,
+              "hasFooter": true,
+              "hasNavigation": true,
+              "hasMain": true,
+              "hasSemanticHTML": true,
+              "hasMetaDescription": true,
+              "hasTitle": true,
+              "responsiveDesign": true,
+              "score": 5
+            }
+          },
+          "readability": {
+            "question": "Can users read easily? (Ensure color contrast nicely)",
+            "score": 0,
+            "answer": "Needs improvement - Only 0.0% meet WCAG AA, average: 2.78:1",
+            "details": {
+              "totalElements": 9,
+              "passingAA": 0,
+              "passingAAA": 0,
+              "aaPercentage": "0.0",
+              "aaaPercentage": "0.0",
+              "averageContrast": "2.78",
+              "score": 0,
+              "failingElements": [
+                {
+                  "element": "A",
+                  "contrast": 2.7750668044433198,
+                  "passesAA": false,
+                  "passesAAA": false,
+                  "textColor": "rgb(255, 255, 255)",
+                  "bgColor": "rgb(255, 107, 107)"
+                },
+                {
+                  "element": "A",
+                  "contrast": 2.7750668044433198,
+                  "passesAA": false,
+                  "passesAAA": false,
+                  "textColor": "rgb(255, 255, 255)",
+                  "bgColor": "rgb(255, 107, 107)"
+                },
+                {
+                  "element": "A",
+                  "contrast": 2.7750668044433198,
+                  "passesAA": false,
+                  "passesAAA": false,
+                  "textColor": "rgb(255, 255, 255)",
+                  "bgColor": "rgb(255, 107, 107)"
+                },
+                {
+                  "element": "A",
+                  "contrast": 2.7750668044433198,
+                  "passesAA": false,
+                  "passesAAA": false,
+                  "textColor": "rgb(255, 255, 255)",
+                  "bgColor": "rgb(255, 107, 107)"
+                },
+                {
+                  "element": "A",
+                  "contrast": 2.7750668044433198,
+                  "passesAA": false,
+                  "passesAAA": false,
+                  "textColor": "rgb(255, 255, 255)",
+                  "bgColor": "rgb(255, 107, 107)"
+                },
+                {
+                  "element": "A",
+                  "contrast": 2.7750668044433198,
+                  "passesAA": false,
+                  "passesAAA": false,
+                  "textColor": "rgb(255, 255, 255)",
+                  "bgColor": "rgb(255, 107, 107)"
+                },
+                {
+                  "element": "A",
+                  "contrast": 2.7750668044433198,
+                  "passesAA": false,
+                  "passesAAA": false,
+                  "textColor": "rgb(255, 255, 255)",
+                  "bgColor": "rgb(255, 107, 107)"
+                },
+                {
+                  "element": "A",
+                  "contrast": 2.7750668044433198,
+                  "passesAA": false,
+                  "passesAAA": false,
+                  "textColor": "rgb(255, 255, 255)",
+                  "bgColor": "rgb(255, 107, 107)"
+                },
+                {
+                  "element": "BUTTON",
+                  "contrast": 2.7750668044433198,
+                  "passesAA": false,
+                  "passesAAA": false,
+                  "textColor": "rgb(255, 255, 255)",
+                  "bgColor": "rgb(255, 107, 107)"
+                }
+              ]
+            }
+          },
+          "professionalism": {
+            "question": "Do the designs have a mark of professionalism to them?",
+            "score": 5,
+            "answer": "Yes - Professional design patterns present",
+            "details": {
+              "hasHeader": true,
+              "hasFooter": true,
+              "hasNavigation": true,
+              "hasMain": true,
+              "hasSemanticHTML": true,
+              "hasMetaDescription": true,
+              "hasTitle": true,
+              "responsiveDesign": true,
+              "score": 5
+            }
+          },
+          "typography": {
+            "question": "Is typography hierarchy clear?",
+            "score": 5,
+            "answer": "Yes - Clear hierarchy with proper heading structure",
+            "details": {
+              "hasProperHierarchy": true,
+              "hasMultipleLevels": true,
+              "hasSizeHierarchy": true,
+              "score": 5
+            }
+          }
+        },
+        "overallScore": 2.99,
+        "needsImprovement": true
+      },
+      {
+        "theme": "onyx",
+        "page": "themes-index",
+        "pagePath": "/themes/",
+        "timestamp": "2025-12-18T15:43:47.081Z",
+        "assessments": {
+          "spacing": {
+            "question": "Is it spaced properly?",
+            "score": 2.727272727272727,
+            "answer": "Needs improvement - Only 11/11 containers have consistent spacing",
+            "details": {
+              "totalContainers": 11,
+              "consistentPadding": 11,
+              "hasVerticalSpacing": 1,
+              "consistencyScore": 5,
+              "spacingScore": 0.4545454545454546,
+              "overallScore": 2.727272727272727,
+              "issues": []
+            }
+          },
+          "cleanliness": {
+            "question": "Is it clean?",
+            "score": 5,
+            "answer": "Yes - Clean, organized design with professional indicators",
+            "details": {
+              "hasHeader": true,
+              "hasFooter": true,
+              "hasNavigation": true,
+              "hasMain": true,
+              "hasSemanticHTML": true,
+              "hasMetaDescription": true,
+              "hasTitle": true,
+              "responsiveDesign": true,
+              "score": 5
+            }
+          },
+          "readability": {
+            "question": "Can users read easily? (Ensure color contrast nicely)",
+            "score": 0,
+            "answer": "Needs improvement - Only 0.0% meet WCAG AA, average: 2.78:1",
+            "details": {
+              "totalElements": 7,
+              "passingAA": 0,
+              "passingAAA": 0,
+              "aaPercentage": "0.0",
+              "aaaPercentage": "0.0",
+              "averageContrast": "2.78",
+              "score": 0,
+              "failingElements": [
+                {
+                  "element": "A",
+                  "contrast": 2.7750668044433198,
+                  "passesAA": false,
+                  "passesAAA": false,
+                  "textColor": "rgb(255, 255, 255)",
+                  "bgColor": "rgb(255, 107, 107)"
+                },
+                {
+                  "element": "A",
+                  "contrast": 2.7750668044433198,
+                  "passesAA": false,
+                  "passesAAA": false,
+                  "textColor": "rgb(255, 255, 255)",
+                  "bgColor": "rgb(255, 107, 107)"
+                },
+                {
+                  "element": "A",
+                  "contrast": 2.7750668044433198,
+                  "passesAA": false,
+                  "passesAAA": false,
+                  "textColor": "rgb(255, 255, 255)",
+                  "bgColor": "rgb(255, 107, 107)"
+                },
+                {
+                  "element": "A",
+                  "contrast": 2.7750668044433198,
+                  "passesAA": false,
+                  "passesAAA": false,
+                  "textColor": "rgb(255, 255, 255)",
+                  "bgColor": "rgb(255, 107, 107)"
+                },
+                {
+                  "element": "A",
+                  "contrast": 2.7750668044433198,
+                  "passesAA": false,
+                  "passesAAA": false,
+                  "textColor": "rgb(255, 255, 255)",
+                  "bgColor": "rgb(255, 107, 107)"
+                },
+                {
+                  "element": "A",
+                  "contrast": 2.7750668044433198,
+                  "passesAA": false,
+                  "passesAAA": false,
+                  "textColor": "rgb(255, 255, 255)",
+                  "bgColor": "rgb(255, 107, 107)"
+                },
+                {
+                  "element": "BUTTON",
+                  "contrast": 2.7750668044433198,
+                  "passesAA": false,
+                  "passesAAA": false,
+                  "textColor": "rgb(255, 255, 255)",
+                  "bgColor": "rgb(255, 107, 107)"
+                }
+              ]
+            }
+          },
+          "professionalism": {
+            "question": "Do the designs have a mark of professionalism to them?",
+            "score": 5,
+            "answer": "Yes - Professional design patterns present",
+            "details": {
+              "hasHeader": true,
+              "hasFooter": true,
+              "hasNavigation": true,
+              "hasMain": true,
+              "hasSemanticHTML": true,
+              "hasMetaDescription": true,
+              "hasTitle": true,
+              "responsiveDesign": true,
+              "score": 5
+            }
+          },
+          "typography": {
+            "question": "Is typography hierarchy clear?",
+            "score": 5,
+            "answer": "Yes - Clear hierarchy with proper heading structure",
+            "details": {
+              "hasProperHierarchy": true,
+              "hasMultipleLevels": true,
+              "hasSizeHierarchy": true,
+              "score": 5
+            }
+          }
+        },
+        "overallScore": 2.93,
+        "needsImprovement": true
+      },
+      {
+        "theme": "paper",
+        "page": "homepage",
+        "pagePath": "/",
+        "timestamp": "2025-12-18T15:44:05.449Z",
+        "assessments": {
+          "spacing": {
+            "question": "Is it spaced properly?",
+            "score": 2.96875,
+            "answer": "Needs improvement - Only 32/32 containers have consistent spacing",
+            "details": {
+              "totalContainers": 32,
+              "consistentPadding": 32,
+              "hasVerticalSpacing": 6,
+              "consistencyScore": 5,
+              "spacingScore": 0.9375,
+              "overallScore": 2.96875,
+              "issues": []
+            }
+          },
+          "cleanliness": {
+            "question": "Is it clean?",
+            "score": 5,
+            "answer": "Yes - Clean, organized design with professional indicators",
+            "details": {
+              "hasHeader": true,
+              "hasFooter": true,
+              "hasNavigation": true,
+              "hasMain": true,
+              "hasSemanticHTML": true,
+              "hasMetaDescription": true,
+              "hasTitle": true,
+              "responsiveDesign": true,
+              "score": 5
+            }
+          },
+          "readability": {
+            "question": "Can users read easily? (Ensure color contrast nicely)",
+            "score": 0,
+            "answer": "Needs improvement - Only 0.0% meet WCAG AA, average: 0.00:1",
+            "details": {
+              "totalElements": 1,
+              "passingAA": 0,
+              "passingAAA": 0,
+              "aaPercentage": "0.0",
+              "aaaPercentage": "0.0",
+              "averageContrast": "0.00",
+              "score": 0,
+              "failingElements": []
+            }
+          },
+          "professionalism": {
+            "question": "Do the designs have a mark of professionalism to them?",
+            "score": 5,
+            "answer": "Yes - Professional design patterns present",
+            "details": {
+              "hasHeader": true,
+              "hasFooter": true,
+              "hasNavigation": true,
+              "hasMain": true,
+              "hasSemanticHTML": true,
+              "hasMetaDescription": true,
+              "hasTitle": true,
+              "responsiveDesign": true,
+              "score": 5
+            }
+          },
+          "typography": {
+            "question": "Is typography hierarchy clear?",
+            "score": 5,
+            "answer": "Yes - Clear hierarchy with proper heading structure",
+            "details": {
+              "hasProperHierarchy": true,
+              "hasMultipleLevels": true,
+              "hasSizeHierarchy": true,
+              "score": 5
+            }
+          }
+        },
+        "overallScore": 2.99,
+        "needsImprovement": true
+      },
+      {
+        "theme": "paper",
+        "page": "themes-index",
+        "pagePath": "/themes/",
+        "timestamp": "2025-12-18T15:44:24.783Z",
+        "assessments": {
+          "spacing": {
+            "question": "Is it spaced properly?",
+            "score": 2.727272727272727,
+            "answer": "Needs improvement - Only 11/11 containers have consistent spacing",
+            "details": {
+              "totalContainers": 11,
+              "consistentPadding": 11,
+              "hasVerticalSpacing": 1,
+              "consistencyScore": 5,
+              "spacingScore": 0.4545454545454546,
+              "overallScore": 2.727272727272727,
+              "issues": []
+            }
+          },
+          "cleanliness": {
+            "question": "Is it clean?",
+            "score": 5,
+            "answer": "Yes - Clean, organized design with professional indicators",
+            "details": {
+              "hasHeader": true,
+              "hasFooter": true,
+              "hasNavigation": true,
+              "hasMain": true,
+              "hasSemanticHTML": true,
+              "hasMetaDescription": true,
+              "hasTitle": true,
+              "responsiveDesign": true,
+              "score": 5
+            }
+          },
+          "readability": {
+            "question": "Can users read easily? (Ensure color contrast nicely)",
+            "score": 0,
+            "answer": "Needs improvement - Only 0.0% meet WCAG AA, average: 0.00:1",
+            "details": {
+              "totalElements": 1,
+              "passingAA": 0,
+              "passingAAA": 0,
+              "aaPercentage": "0.0",
+              "aaaPercentage": "0.0",
+              "averageContrast": "0.00",
+              "score": 0,
+              "failingElements": []
+            }
+          },
+          "professionalism": {
+            "question": "Do the designs have a mark of professionalism to them?",
+            "score": 5,
+            "answer": "Yes - Professional design patterns present",
+            "details": {
+              "hasHeader": true,
+              "hasFooter": true,
+              "hasNavigation": true,
+              "hasMain": true,
+              "hasSemanticHTML": true,
+              "hasMetaDescription": true,
+              "hasTitle": true,
+              "responsiveDesign": true,
+              "score": 5
+            }
+          },
+          "typography": {
+            "question": "Is typography hierarchy clear?",
+            "score": 5,
+            "answer": "Yes - Clear hierarchy with proper heading structure",
+            "details": {
+              "hasProperHierarchy": true,
+              "hasMultipleLevels": true,
+              "hasSizeHierarchy": true,
+              "score": 5
+            }
+          }
+        },
+        "overallScore": 2.93,
+        "needsImprovement": true
+      },
+      {
+        "theme": "neon",
+        "page": "homepage",
+        "pagePath": "/",
+        "timestamp": "2025-12-18T15:44:43.157Z",
+        "assessments": {
+          "spacing": {
+            "question": "Is it spaced properly?",
+            "score": 2.96875,
+            "answer": "Needs improvement - Only 32/32 containers have consistent spacing",
+            "details": {
+              "totalContainers": 32,
+              "consistentPadding": 32,
+              "hasVerticalSpacing": 6,
+              "consistencyScore": 5,
+              "spacingScore": 0.9375,
+              "overallScore": 2.96875,
+              "issues": []
+            }
+          },
+          "cleanliness": {
+            "question": "Is it clean?",
+            "score": 5,
+            "answer": "Yes - Clean, organized design with professional indicators",
+            "details": {
+              "hasHeader": true,
+              "hasFooter": true,
+              "hasNavigation": true,
+              "hasMain": true,
+              "hasSemanticHTML": true,
+              "hasMetaDescription": true,
+              "hasTitle": true,
+              "responsiveDesign": true,
+              "score": 5
+            }
+          },
+          "readability": {
+            "question": "Can users read easily? (Ensure color contrast nicely)",
+            "score": 0,
+            "answer": "Needs improvement - Only 0.0% meet WCAG AA, average: 1.00:1",
+            "details": {
+              "totalElements": 11,
+              "passingAA": 0,
+              "passingAAA": 0,
+              "aaPercentage": "0.0",
+              "aaaPercentage": "0.0",
+              "averageContrast": "1.00",
+              "score": 0,
+              "failingElements": [
+                {
+                  "element": "A",
+                  "contrast": 1,
+                  "passesAA": false,
+                  "passesAAA": false,
+                  "textColor": "rgb(0, 255, 136)",
+                  "bgColor": "rgba(0, 255, 136, 0.1)"
+                },
+                {
+                  "element": "A",
+                  "contrast": 1,
+                  "passesAA": false,
+                  "passesAAA": false,
+                  "textColor": "rgb(0, 255, 136)",
+                  "bgColor": "rgba(0, 255, 136, 0.1)"
+                },
+                {
+                  "element": "A",
+                  "contrast": 1,
+                  "passesAA": false,
+                  "passesAAA": false,
+                  "textColor": "rgb(0, 255, 136)",
+                  "bgColor": "rgba(0, 255, 136, 0.1)"
+                },
+                {
+                  "element": "A",
+                  "contrast": 1,
+                  "passesAA": false,
+                  "passesAAA": false,
+                  "textColor": "rgb(0, 255, 136)",
+                  "bgColor": "rgba(0, 255, 136, 0.1)"
+                },
+                {
+                  "element": "A",
+                  "contrast": 1,
+                  "passesAA": false,
+                  "passesAAA": false,
+                  "textColor": "rgb(0, 255, 136)",
+                  "bgColor": "rgba(0, 255, 136, 0.1)"
+                },
+                {
+                  "element": "A",
+                  "contrast": 1,
+                  "passesAA": false,
+                  "passesAAA": false,
+                  "textColor": "rgb(0, 255, 136)",
+                  "bgColor": "rgba(0, 255, 136, 0.1)"
+                },
+                {
+                  "element": "A",
+                  "contrast": 1,
+                  "passesAA": false,
+                  "passesAAA": false,
+                  "textColor": "rgb(0, 255, 136)",
+                  "bgColor": "rgba(0, 255, 136, 0.1)"
+                },
+                {
+                  "element": "A",
+                  "contrast": 1,
+                  "passesAA": false,
+                  "passesAAA": false,
+                  "textColor": "rgb(0, 255, 136)",
+                  "bgColor": "rgba(0, 255, 136, 0.1)"
+                },
+                {
+                  "element": "A",
+                  "contrast": 1,
+                  "passesAA": false,
+                  "passesAAA": false,
+                  "textColor": "rgb(0, 255, 136)",
+                  "bgColor": "rgba(0, 255, 136, 0.1)"
+                },
+                {
+                  "element": "BUTTON",
+                  "contrast": 1,
+                  "passesAA": false,
+                  "passesAAA": false,
+                  "textColor": "rgb(0, 255, 136)",
+                  "bgColor": "rgba(0, 255, 136, 0.1)"
+                }
+              ]
+            }
+          },
+          "professionalism": {
+            "question": "Do the designs have a mark of professionalism to them?",
+            "score": 5,
+            "answer": "Yes - Professional design patterns present",
+            "details": {
+              "hasHeader": true,
+              "hasFooter": true,
+              "hasNavigation": true,
+              "hasMain": true,
+              "hasSemanticHTML": true,
+              "hasMetaDescription": true,
+              "hasTitle": true,
+              "responsiveDesign": true,
+              "score": 5
+            }
+          },
+          "typography": {
+            "question": "Is typography hierarchy clear?",
+            "score": 5,
+            "answer": "Yes - Clear hierarchy with proper heading structure",
+            "details": {
+              "hasProperHierarchy": true,
+              "hasMultipleLevels": true,
+              "hasSizeHierarchy": true,
+              "score": 5
+            }
+          }
+        },
+        "overallScore": 2.99,
+        "needsImprovement": true
+      },
+      {
+        "theme": "neon",
+        "page": "themes-index",
+        "pagePath": "/themes/",
+        "timestamp": "2025-12-18T15:45:02.208Z",
+        "assessments": {
+          "spacing": {
+            "question": "Is it spaced properly?",
+            "score": 2.727272727272727,
+            "answer": "Needs improvement - Only 11/11 containers have consistent spacing",
+            "details": {
+              "totalContainers": 11,
+              "consistentPadding": 11,
+              "hasVerticalSpacing": 1,
+              "consistencyScore": 5,
+              "spacingScore": 0.4545454545454546,
+              "overallScore": 2.727272727272727,
+              "issues": []
+            }
+          },
+          "cleanliness": {
+            "question": "Is it clean?",
+            "score": 5,
+            "answer": "Yes - Clean, organized design with professional indicators",
+            "details": {
+              "hasHeader": true,
+              "hasFooter": true,
+              "hasNavigation": true,
+              "hasMain": true,
+              "hasSemanticHTML": true,
+              "hasMetaDescription": true,
+              "hasTitle": true,
+              "responsiveDesign": true,
+              "score": 5
+            }
+          },
+          "readability": {
+            "question": "Can users read easily? (Ensure color contrast nicely)",
+            "score": 0,
+            "answer": "Needs improvement - Only 0.0% meet WCAG AA, average: 1.00:1",
+            "details": {
+              "totalElements": 8,
+              "passingAA": 0,
+              "passingAAA": 0,
+              "aaPercentage": "0.0",
+              "aaaPercentage": "0.0",
+              "averageContrast": "1.00",
+              "score": 0,
+              "failingElements": [
+                {
+                  "element": "A",
+                  "contrast": 1,
+                  "passesAA": false,
+                  "passesAAA": false,
+                  "textColor": "rgb(0, 255, 136)",
+                  "bgColor": "rgba(0, 255, 136, 0.1)"
+                },
+                {
+                  "element": "A",
+                  "contrast": 1,
+                  "passesAA": false,
+                  "passesAAA": false,
+                  "textColor": "rgb(0, 255, 136)",
+                  "bgColor": "rgba(0, 255, 136, 0.1)"
+                },
+                {
+                  "element": "A",
+                  "contrast": 1,
+                  "passesAA": false,
+                  "passesAAA": false,
+                  "textColor": "rgb(0, 255, 136)",
+                  "bgColor": "rgba(0, 255, 136, 0.1)"
+                },
+                {
+                  "element": "A",
+                  "contrast": 1,
+                  "passesAA": false,
+                  "passesAAA": false,
+                  "textColor": "rgb(0, 255, 136)",
+                  "bgColor": "rgba(0, 255, 136, 0.1)"
+                },
+                {
+                  "element": "A",
+                  "contrast": 1,
+                  "passesAA": false,
+                  "passesAAA": false,
+                  "textColor": "rgb(0, 255, 136)",
+                  "bgColor": "rgba(0, 255, 136, 0.1)"
+                },
+                {
+                  "element": "A",
+                  "contrast": 1,
+                  "passesAA": false,
+                  "passesAAA": false,
+                  "textColor": "rgb(0, 255, 136)",
+                  "bgColor": "rgba(0, 255, 136, 0.1)"
+                },
+                {
+                  "element": "BUTTON",
+                  "contrast": 1,
+                  "passesAA": false,
+                  "passesAAA": false,
+                  "textColor": "rgb(0, 255, 136)",
+                  "bgColor": "rgba(0, 255, 136, 0.1)"
+                },
+                {
+                  "element": "BUTTON",
+                  "contrast": 1,
+                  "passesAA": false,
+                  "passesAAA": false,
+                  "textColor": "rgb(0, 255, 136)",
+                  "bgColor": "rgba(0, 255, 136, 0.1)"
+                }
+              ]
+            }
+          },
+          "professionalism": {
+            "question": "Do the designs have a mark of professionalism to them?",
+            "score": 5,
+            "answer": "Yes - Professional design patterns present",
+            "details": {
+              "hasHeader": true,
+              "hasFooter": true,
+              "hasNavigation": true,
+              "hasMain": true,
+              "hasSemanticHTML": true,
+              "hasMetaDescription": true,
+              "hasTitle": true,
+              "responsiveDesign": true,
+              "score": 5
+            }
+          },
+          "typography": {
+            "question": "Is typography hierarchy clear?",
+            "score": 5,
+            "answer": "Yes - Clear hierarchy with proper heading structure",
+            "details": {
+              "hasProperHierarchy": true,
+              "hasMultipleLevels": true,
+              "hasSizeHierarchy": true,
+              "score": 5
+            }
+          }
+        },
+        "overallScore": 2.93,
+        "needsImprovement": true
+      },
+      {
+        "theme": "brutal",
+        "page": "homepage",
+        "pagePath": "/",
+        "timestamp": "2025-12-18T15:45:20.913Z",
+        "assessments": {
+          "spacing": {
+            "question": "Is it spaced properly?",
+            "score": 3.046875,
+            "answer": "Needs improvement - Only 32/32 containers have consistent spacing",
+            "details": {
+              "totalContainers": 32,
+              "consistentPadding": 32,
+              "hasVerticalSpacing": 7,
+              "consistencyScore": 5,
+              "spacingScore": 1.09375,
+              "overallScore": 3.046875,
+              "issues": []
+            }
+          },
+          "cleanliness": {
+            "question": "Is it clean?",
+            "score": 5,
+            "answer": "Yes - Clean, organized design with professional indicators",
+            "details": {
+              "hasHeader": true,
+              "hasFooter": true,
+              "hasNavigation": true,
+              "hasMain": true,
+              "hasSemanticHTML": true,
+              "hasMetaDescription": true,
+              "hasTitle": true,
+              "responsiveDesign": true,
+              "score": 5
+            }
+          },
+          "readability": {
+            "question": "Can users read easily? (Ensure color contrast nicely)",
+            "score": 0,
+            "answer": "Needs improvement - Only 0.0% meet WCAG AA, average: 0.00:1",
+            "details": {
+              "totalElements": 1,
+              "passingAA": 0,
+              "passingAAA": 0,
+              "aaPercentage": "0.0",
+              "aaaPercentage": "0.0",
+              "averageContrast": "0.00",
+              "score": 0,
+              "failingElements": []
+            }
+          },
+          "professionalism": {
+            "question": "Do the designs have a mark of professionalism to them?",
+            "score": 5,
+            "answer": "Yes - Professional design patterns present",
+            "details": {
+              "hasHeader": true,
+              "hasFooter": true,
+              "hasNavigation": true,
+              "hasMain": true,
+              "hasSemanticHTML": true,
+              "hasMetaDescription": true,
+              "hasTitle": true,
+              "responsiveDesign": true,
+              "score": 5
+            }
+          },
+          "typography": {
+            "question": "Is typography hierarchy clear?",
+            "score": 5,
+            "answer": "Yes - Clear hierarchy with proper heading structure",
+            "details": {
+              "hasProperHierarchy": true,
+              "hasMultipleLevels": true,
+              "hasSizeHierarchy": true,
+              "score": 5
+            }
+          }
+        },
+        "overallScore": 3.01,
+        "needsImprovement": true
+      },
+      {
+        "theme": "brutal",
+        "page": "themes-index",
+        "pagePath": "/themes/",
+        "timestamp": "2025-12-18T15:45:39.745Z",
+        "assessments": {
+          "spacing": {
+            "question": "Is it spaced properly?",
+            "score": 2.9545454545454546,
+            "answer": "Needs improvement - Only 11/11 containers have consistent spacing",
+            "details": {
+              "totalContainers": 11,
+              "consistentPadding": 11,
+              "hasVerticalSpacing": 2,
+              "consistencyScore": 5,
+              "spacingScore": 0.9090909090909092,
+              "overallScore": 2.9545454545454546,
+              "issues": []
+            }
+          },
+          "cleanliness": {
+            "question": "Is it clean?",
+            "score": 5,
+            "answer": "Yes - Clean, organized design with professional indicators",
+            "details": {
+              "hasHeader": true,
+              "hasFooter": true,
+              "hasNavigation": true,
+              "hasMain": true,
+              "hasSemanticHTML": true,
+              "hasMetaDescription": true,
+              "hasTitle": true,
+              "responsiveDesign": true,
+              "score": 5
+            }
+          },
+          "readability": {
+            "question": "Can users read easily? (Ensure color contrast nicely)",
+            "score": 0,
+            "answer": "Needs improvement - Only 0.0% meet WCAG AA, average: 0.00:1",
+            "details": {
+              "totalElements": 1,
+              "passingAA": 0,
+              "passingAAA": 0,
+              "aaPercentage": "0.0",
+              "aaaPercentage": "0.0",
+              "averageContrast": "0.00",
+              "score": 0,
+              "failingElements": []
+            }
+          },
+          "professionalism": {
+            "question": "Do the designs have a mark of professionalism to them?",
+            "score": 5,
+            "answer": "Yes - Professional design patterns present",
+            "details": {
+              "hasHeader": true,
+              "hasFooter": true,
+              "hasNavigation": true,
+              "hasMain": true,
+              "hasSemanticHTML": true,
+              "hasMetaDescription": true,
+              "hasTitle": true,
+              "responsiveDesign": true,
+              "score": 5
+            }
+          },
+          "typography": {
+            "question": "Is typography hierarchy clear?",
+            "score": 5,
+            "answer": "Yes - Clear hierarchy with proper heading structure",
+            "details": {
+              "hasProperHierarchy": true,
+              "hasMultipleLevels": true,
+              "hasSizeHierarchy": true,
+              "score": 5
+            }
+          }
+        },
+        "overallScore": 2.99,
+        "needsImprovement": true
+      },
+      {
+        "theme": "calm",
+        "page": "homepage",
+        "pagePath": "/",
+        "timestamp": "2025-12-18T15:45:58.247Z",
+        "assessments": {
+          "spacing": {
+            "question": "Is it spaced properly?",
+            "score": 2.96875,
+            "answer": "Needs improvement - Only 32/32 containers have consistent spacing",
+            "details": {
+              "totalContainers": 32,
+              "consistentPadding": 32,
+              "hasVerticalSpacing": 6,
+              "consistencyScore": 5,
+              "spacingScore": 0.9375,
+              "overallScore": 2.96875,
+              "issues": []
+            }
+          },
+          "cleanliness": {
+            "question": "Is it clean?",
+            "score": 5,
+            "answer": "Yes - Clean, organized design with professional indicators",
+            "details": {
+              "hasHeader": true,
+              "hasFooter": true,
+              "hasNavigation": true,
+              "hasMain": true,
+              "hasSemanticHTML": true,
+              "hasMetaDescription": true,
+              "hasTitle": true,
+              "responsiveDesign": true,
+              "score": 5
+            }
+          },
+          "readability": {
+            "question": "Can users read easily? (Ensure color contrast nicely)",
+            "score": 5,
+            "answer": "Yes - 100.0% of text elements meet WCAG AA contrast (4.5:1), average: 5.34:1",
+            "details": {
+              "totalElements": 9,
+              "passingAA": 9,
+              "passingAAA": 0,
+              "aaPercentage": "100.0",
+              "aaaPercentage": "0.0",
+              "averageContrast": "5.34",
+              "score": 5,
+              "failingElements": []
+            }
+          },
+          "professionalism": {
+            "question": "Do the designs have a mark of professionalism to them?",
+            "score": 5,
+            "answer": "Yes - Professional design patterns present",
+            "details": {
+              "hasHeader": true,
+              "hasFooter": true,
+              "hasNavigation": true,
+              "hasMain": true,
+              "hasSemanticHTML": true,
+              "hasMetaDescription": true,
+              "hasTitle": true,
+              "responsiveDesign": true,
+              "score": 5
+            }
+          },
+          "typography": {
+            "question": "Is typography hierarchy clear?",
+            "score": 5,
+            "answer": "Yes - Clear hierarchy with proper heading structure",
+            "details": {
+              "hasProperHierarchy": true,
+              "hasMultipleLevels": true,
+              "hasSizeHierarchy": true,
+              "score": 5
+            }
+          }
+        },
+        "overallScore": 4.49,
+        "needsImprovement": true
+      },
+      {
+        "theme": "calm",
+        "page": "themes-index",
+        "pagePath": "/themes/",
+        "timestamp": "2025-12-18T15:46:17.068Z",
+        "assessments": {
+          "spacing": {
+            "question": "Is it spaced properly?",
+            "score": 2.727272727272727,
+            "answer": "Needs improvement - Only 11/11 containers have consistent spacing",
+            "details": {
+              "totalContainers": 11,
+              "consistentPadding": 11,
+              "hasVerticalSpacing": 1,
+              "consistencyScore": 5,
+              "spacingScore": 0.4545454545454546,
+              "overallScore": 2.727272727272727,
+              "issues": []
+            }
+          },
+          "cleanliness": {
+            "question": "Is it clean?",
+            "score": 5,
+            "answer": "Yes - Clean, organized design with professional indicators",
+            "details": {
+              "hasHeader": true,
+              "hasFooter": true,
+              "hasNavigation": true,
+              "hasMain": true,
+              "hasSemanticHTML": true,
+              "hasMetaDescription": true,
+              "hasTitle": true,
+              "responsiveDesign": true,
+              "score": 5
+            }
+          },
+          "readability": {
+            "question": "Can users read easily? (Ensure color contrast nicely)",
+            "score": 5,
+            "answer": "Yes - 100.0% of text elements meet WCAG AA contrast (4.5:1), average: 5.34:1",
+            "details": {
+              "totalElements": 7,
+              "passingAA": 7,
+              "passingAAA": 0,
+              "aaPercentage": "100.0",
+              "aaaPercentage": "0.0",
+              "averageContrast": "5.34",
+              "score": 5,
+              "failingElements": []
+            }
+          },
+          "professionalism": {
+            "question": "Do the designs have a mark of professionalism to them?",
+            "score": 5,
+            "answer": "Yes - Professional design patterns present",
+            "details": {
+              "hasHeader": true,
+              "hasFooter": true,
+              "hasNavigation": true,
+              "hasMain": true,
+              "hasSemanticHTML": true,
+              "hasMetaDescription": true,
+              "hasTitle": true,
+              "responsiveDesign": true,
+              "score": 5
+            }
+          },
+          "typography": {
+            "question": "Is typography hierarchy clear?",
+            "score": 5,
+            "answer": "Yes - Clear hierarchy with proper heading structure",
+            "details": {
+              "hasProperHierarchy": true,
+              "hasMultipleLevels": true,
+              "hasSizeHierarchy": true,
+              "score": 5
+            }
+          }
+        },
+        "overallScore": 4.43,
+        "needsImprovement": true
+      },
+      {
+        "theme": "royal",
+        "page": "homepage",
+        "pagePath": "/",
+        "timestamp": "2025-12-18T15:46:35.802Z",
+        "assessments": {
+          "spacing": {
+            "question": "Is it spaced properly?",
+            "score": 2.96875,
+            "answer": "Needs improvement - Only 32/32 containers have consistent spacing",
+            "details": {
+              "totalContainers": 32,
+              "consistentPadding": 32,
+              "hasVerticalSpacing": 6,
+              "consistencyScore": 5,
+              "spacingScore": 0.9375,
+              "overallScore": 2.96875,
+              "issues": []
+            }
+          },
+          "cleanliness": {
+            "question": "Is it clean?",
+            "score": 5,
+            "answer": "Yes - Clean, organized design with professional indicators",
+            "details": {
+              "hasHeader": true,
+              "hasFooter": true,
+              "hasNavigation": true,
+              "hasMain": true,
+              "hasSemanticHTML": true,
+              "hasMetaDescription": true,
+              "hasTitle": true,
+              "responsiveDesign": true,
+              "score": 5
+            }
+          },
+          "readability": {
+            "question": "Can users read easily? (Ensure color contrast nicely)",
+            "score": 0,
+            "answer": "Needs improvement - Only 0.0% meet WCAG AA, average: 0.00:1",
+            "details": {
+              "totalElements": 1,
+              "passingAA": 0,
+              "passingAAA": 0,
+              "aaPercentage": "0.0",
+              "aaaPercentage": "0.0",
+              "averageContrast": "0.00",
+              "score": 0,
+              "failingElements": []
+            }
+          },
+          "professionalism": {
+            "question": "Do the designs have a mark of professionalism to them?",
+            "score": 5,
+            "answer": "Yes - Professional design patterns present",
+            "details": {
+              "hasHeader": true,
+              "hasFooter": true,
+              "hasNavigation": true,
+              "hasMain": true,
+              "hasSemanticHTML": true,
+              "hasMetaDescription": true,
+              "hasTitle": true,
+              "responsiveDesign": true,
+              "score": 5
+            }
+          },
+          "typography": {
+            "question": "Is typography hierarchy clear?",
+            "score": 5,
+            "answer": "Yes - Clear hierarchy with proper heading structure",
+            "details": {
+              "hasProperHierarchy": true,
+              "hasMultipleLevels": true,
+              "hasSizeHierarchy": true,
+              "score": 5
+            }
+          }
+        },
+        "overallScore": 2.99,
+        "needsImprovement": true
+      },
+      {
+        "theme": "royal",
+        "page": "themes-index",
+        "pagePath": "/themes/",
+        "timestamp": "2025-12-18T15:46:55.183Z",
+        "assessments": {
+          "spacing": {
+            "question": "Is it spaced properly?",
+            "score": 2.727272727272727,
+            "answer": "Needs improvement - Only 11/11 containers have consistent spacing",
+            "details": {
+              "totalContainers": 11,
+              "consistentPadding": 11,
+              "hasVerticalSpacing": 1,
+              "consistencyScore": 5,
+              "spacingScore": 0.4545454545454546,
+              "overallScore": 2.727272727272727,
+              "issues": []
+            }
+          },
+          "cleanliness": {
+            "question": "Is it clean?",
+            "score": 5,
+            "answer": "Yes - Clean, organized design with professional indicators",
+            "details": {
+              "hasHeader": true,
+              "hasFooter": true,
+              "hasNavigation": true,
+              "hasMain": true,
+              "hasSemanticHTML": true,
+              "hasMetaDescription": true,
+              "hasTitle": true,
+              "responsiveDesign": true,
+              "score": 5
+            }
+          },
+          "readability": {
+            "question": "Can users read easily? (Ensure color contrast nicely)",
+            "score": 0,
+            "answer": "Needs improvement - Only 0.0% meet WCAG AA, average: 0.00:1",
+            "details": {
+              "totalElements": 1,
+              "passingAA": 0,
+              "passingAAA": 0,
+              "aaPercentage": "0.0",
+              "aaaPercentage": "0.0",
+              "averageContrast": "0.00",
+              "score": 0,
+              "failingElements": []
+            }
+          },
+          "professionalism": {
+            "question": "Do the designs have a mark of professionalism to them?",
+            "score": 5,
+            "answer": "Yes - Professional design patterns present",
+            "details": {
+              "hasHeader": true,
+              "hasFooter": true,
+              "hasNavigation": true,
+              "hasMain": true,
+              "hasSemanticHTML": true,
+              "hasMetaDescription": true,
+              "hasTitle": true,
+              "responsiveDesign": true,
+              "score": 5
+            }
+          },
+          "typography": {
+            "question": "Is typography hierarchy clear?",
+            "score": 5,
+            "answer": "Yes - Clear hierarchy with proper heading structure",
+            "details": {
+              "hasProperHierarchy": true,
+              "hasMultipleLevels": true,
+              "hasSizeHierarchy": true,
+              "score": 5
+            }
+          }
+        },
+        "overallScore": 2.93,
+        "needsImprovement": true
+      }
+    ],
+    "averageScore": 3.2166666666666672,
+    "minimumScore": 2.93,
+    "issuesFound": 12
+  }
+]

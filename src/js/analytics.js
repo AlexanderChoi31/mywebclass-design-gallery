@@ -16,20 +16,17 @@
     
     // Check consent
     if (!window.ConsentManager || !window.ConsentManager.hasConsent()) {
-      console.log('Analytics blocked: No consent');
       return;
     }
 
     // Check if analytics is enabled
     const enabled = document.documentElement.dataset.analyticsEnabled === 'true';
     if (!enabled) {
-      console.log('Analytics disabled in config');
       return;
     }
 
     // Initialize analytics here
     // This is a placeholder - replace with actual analytics implementation
-    console.log('Analytics initialized');
 
     // Track page view
     trackPageView();
@@ -46,13 +43,9 @@
    * Track page view
    */
   function trackPageView() {
-    const path = window.location.pathname;
-    const title = document.title;
-    
-    // Placeholder - replace with actual analytics call
-    console.log('Page view:', { path, title });
-    
     // Example: Google Analytics 4
+    // const path = window.location.pathname;
+    // const title = document.title;
     // if (typeof gtag !== 'undefined') {
     //   gtag('config', 'GA_MEASUREMENT_ID', {
     //     page_path: path,
@@ -65,13 +58,12 @@
    * Track custom event
    */
   function trackEvent(eventName, eventData = {}) {
-    // Placeholder - replace with actual analytics call
-    console.log('Event:', eventName, eventData);
-    
     // Example: Google Analytics 4
     // if (typeof gtag !== 'undefined') {
     //   gtag('event', eventName, eventData);
     // }
+    // Suppress unused parameter warning
+    void eventData;
   }
 
   /**

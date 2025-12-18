@@ -3,8 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>{% if title %}{{ title }} - {% endif %}MyWebClass Design Gallery</title>
     <meta name="description" content="{{ description | default('Outstanding Design Styles Gallery showcasing five distinct themes') }}">
+    <meta name="keywords" content="web design, themes, CSS, design gallery, eleventy, static site">
+    <meta name="author" content="MyWebClass">
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#4299e1">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://joyful-cranachan-6fdbb1.netlify.app{{ page.url }}">
+    <meta property="og:title" content="{% if title %}{{ title }} - {% endif %}MyWebClass Design Gallery">
+    <meta property="og:description" content="{{ description | default('Outstanding Design Styles Gallery showcasing five distinct themes') }}">
+    <meta property="og:site_name" content="MyWebClass Design Gallery">
+    
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="{% if title %}{{ title }} - {% endif %}MyWebClass Design Gallery">
+    <meta name="twitter:description" content="{{ description | default('Outstanding Design Styles Gallery showcasing five distinct themes') }}">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://joyful-cranachan-6fdbb1.netlify.app{{ page.url }}">
     
     <!-- Styles -->
     <link rel="stylesheet" href="/css/themes.css">
@@ -14,8 +34,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@700&family=Merriweather:wght@400;700&family=Space+Grotesk:wght@700&display=swap" rel="stylesheet">
+    <!-- Google Fonts with display=swap for performance -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@700&family=Merriweather:wght@400;700&family=Space+Grotesk:wght@700&family=Dancing+Script:wght@400;700&family=Cormorant+Garamond:wght@400;600;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+    <noscript><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@700&family=Merriweather:wght@400;700&family=Space+Grotesk:wght@700&family=Dancing+Script:wght@400;700&family=Cormorant+Garamond:wght@400;600;700&display=swap" rel="stylesheet"></noscript>
 </head>
 <body>
     {% include "components/header.njk" %}
@@ -27,10 +48,10 @@
     {% include "components/footer.njk" %}
     {% include "components/cookie-banner.njk" %}
     
-    <!-- Scripts -->
-    <script src="/js/theme-switcher.js"></script>
-    <script src="/js/consent.js"></script>
-    <script src="/js/analytics.js"></script>
+    <!-- Scripts - Defer for performance -->
+    <script src="/js/theme-switcher.js" defer></script>
+    <script src="/js/consent.js" defer></script>
+    <script src="/js/analytics.js" defer></script>
     
     {% if scripts %}
         {% for script in scripts %}

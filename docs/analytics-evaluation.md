@@ -16,6 +16,7 @@ This document evaluates analytics tools for the MyWebClass Design Gallery projec
 ### 1. Google Analytics 4 (GA4)
 
 **Pros:**
+
 - Industry standard, widely used
 - Comprehensive analytics features
 - Free tier with generous limits
@@ -24,6 +25,7 @@ This document evaluates analytics tools for the MyWebClass Design Gallery projec
 - Real-time reporting
 
 **Cons:**
+
 - Privacy concerns (data sent to Google)
 - Requires consent banner
 - Can impact performance if not optimized
@@ -41,6 +43,7 @@ This document evaluates analytics tools for the MyWebClass Design Gallery projec
 ### 2. Plausible Analytics
 
 **Pros:**
+
 - Privacy-focused, GDPR compliant by default
 - No cookies required
 - Lightweight (1.4KB script)
@@ -49,6 +52,7 @@ This document evaluates analytics tools for the MyWebClass Design Gallery projec
 - No personal data collection
 
 **Cons:**
+
 - Paid service (though affordable)
 - Less feature-rich than GA4
 - Smaller community
@@ -66,6 +70,7 @@ This document evaluates analytics tools for the MyWebClass Design Gallery projec
 ### 3. Simple Analytics
 
 **Pros:**
+
 - Privacy-first, GDPR compliant
 - No cookies, no personal data
 - Very lightweight
@@ -73,6 +78,7 @@ This document evaluates analytics tools for the MyWebClass Design Gallery projec
 - Affordable pricing
 
 **Cons:**
+
 - Limited features compared to GA4
 - Paid service
 - Smaller ecosystem
@@ -147,4 +153,3 @@ If privacy becomes a higher priority, **Plausible Analytics** is an excellent al
 - No analytics load before user consent
 - Analytics can be easily swapped for alternative solution
 - All analytics interactions logged for debugging
-

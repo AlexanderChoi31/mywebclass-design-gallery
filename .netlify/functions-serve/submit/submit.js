@@ -1,0 +1,1 @@
+module.exports = require('./_functions/submit.js')

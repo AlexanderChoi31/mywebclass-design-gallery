@@ -8,7 +8,7 @@
 
   const THEME_STORAGE_KEY = 'mywebclass-theme';
   const DEFAULT_THEME = 'calm';
-  const THEMES = ['onyx', 'paper', 'neon', 'brutal', 'calm'];
+  const THEMES = ['onyx', 'paper', 'neon', 'brutal', 'calm', 'royal'];
 
   /**
    * Initialize theme from localStorage or default
@@ -25,7 +25,6 @@
    */
   function setTheme(theme) {
     if (!THEMES.includes(theme)) {
-      console.warn(`Invalid theme: ${theme}. Using default.`);
       theme = DEFAULT_THEME;
     }
 

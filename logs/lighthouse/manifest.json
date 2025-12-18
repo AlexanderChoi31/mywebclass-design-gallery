@@ -1,0 +1,119 @@
+[
+  {
+    "url": "http://localhost:8080/",
+    "isRepresentativeRun": false,
+    "htmlPath": "/Users/alexchoi/CMS Project/logs/lighthouse/localhost-_-2025_12_18_08_31_55.report.html",
+    "jsonPath": "/Users/alexchoi/CMS Project/logs/lighthouse/localhost-_-2025_12_18_08_31_55.report.json",
+    "summary": {
+      "performance": 0.94,
+      "accessibility": 0.97,
+      "best-practices": 0.92,
+      "seo": 0.91,
+      "pwa": 0.33
+    }
+  },
+  {
+    "url": "http://localhost:8080/",
+    "isRepresentativeRun": false,
+    "htmlPath": "/Users/alexchoi/CMS Project/logs/lighthouse/localhost-_-2025_12_18_08_32_17.report.html",
+    "jsonPath": "/Users/alexchoi/CMS Project/logs/lighthouse/localhost-_-2025_12_18_08_32_17.report.json",
+    "summary": {
+      "performance": 0.94,
+      "accessibility": 0.97,
+      "best-practices": 0.92,
+      "seo": 0.91,
+      "pwa": 0.33
+    }
+  },
+  {
+    "url": "http://localhost:8080/themes/",
+    "isRepresentativeRun": false,
+    "htmlPath": "/Users/alexchoi/CMS Project/logs/lighthouse/localhost-_themes_-2025_12_18_08_32_39.report.html",
+    "jsonPath": "/Users/alexchoi/CMS Project/logs/lighthouse/localhost-_themes_-2025_12_18_08_32_39.report.json",
+    "summary": {
+      "performance": 0.94,
+      "accessibility": 0.97,
+      "best-practices": 0.92,
+      "seo": 0.91,
+      "pwa": 0.33
+    }
+  },
+  {
+    "url": "http://localhost:8080/themes/",
+    "isRepresentativeRun": false,
+    "htmlPath": "/Users/alexchoi/CMS Project/logs/lighthouse/localhost-_themes_-2025_12_18_08_32_50.report.html",
+    "jsonPath": "/Users/alexchoi/CMS Project/logs/lighthouse/localhost-_themes_-2025_12_18_08_32_50.report.json",
+    "summary": {
+      "performance": 0.94,
+      "accessibility": 0.97,
+      "best-practices": 0.92,
+      "seo": 0.91,
+      "pwa": 0.33
+    }
+  },
+  {
+    "url": "http://localhost:8080/submit/",
+    "isRepresentativeRun": false,
+    "htmlPath": "/Users/alexchoi/CMS Project/logs/lighthouse/localhost-_submit_-2025_12_18_08_33_12.report.html",
+    "jsonPath": "/Users/alexchoi/CMS Project/logs/lighthouse/localhost-_submit_-2025_12_18_08_33_12.report.json",
+    "summary": {
+      "performance": 0.94,
+      "accessibility": 0.96,
+      "best-practices": 0.92,
+      "seo": 0.91,
+      "pwa": 0.33
+    }
+  },
+  {
+    "url": "http://localhost:8080/submit/",
+    "isRepresentativeRun": false,
+    "htmlPath": "/Users/alexchoi/CMS Project/logs/lighthouse/localhost-_submit_-2025_12_18_08_33_23.report.html",
+    "jsonPath": "/Users/alexchoi/CMS Project/logs/lighthouse/localhost-_submit_-2025_12_18_08_33_23.report.json",
+    "summary": {
+      "performance": 0.94,
+      "accessibility": 0.96,
+      "best-practices": 0.92,
+      "seo": 0.91,
+      "pwa": 0.33
+    }
+  },
+  {
+    "url": "http://localhost:8080/",
+    "isRepresentativeRun": true,
+    "htmlPath": "/Users/alexchoi/CMS Project/logs/lighthouse/localhost-_-2025_12_18_08_32_06.report.html",
+    "jsonPath": "/Users/alexchoi/CMS Project/logs/lighthouse/localhost-_-2025_12_18_08_32_06.report.json",
+    "summary": {
+      "performance": 0.94,
+      "accessibility": 0.97,
+      "best-practices": 0.92,
+      "seo": 0.91,
+      "pwa": 0.33
+    }
+  },
+  {
+    "url": "http://localhost:8080/themes/",
+    "isRepresentativeRun": true,
+    "htmlPath": "/Users/alexchoi/CMS Project/logs/lighthouse/localhost-_themes_-2025_12_18_08_32_28.report.html",
+    "jsonPath": "/Users/alexchoi/CMS Project/logs/lighthouse/localhost-_themes_-2025_12_18_08_32_28.report.json",
+    "summary": {
+      "performance": 0.94,
+      "accessibility": 0.97,
+      "best-practices": 0.92,
+      "seo": 0.91,
+      "pwa": 0.33
+    }
+  },
+  {
+    "url": "http://localhost:8080/submit/",
+    "isRepresentativeRun": true,
+    "htmlPath": "/Users/alexchoi/CMS Project/logs/lighthouse/localhost-_submit_-2025_12_18_08_33_01.report.html",
+    "jsonPath": "/Users/alexchoi/CMS Project/logs/lighthouse/localhost-_submit_-2025_12_18_08_33_01.report.json",
+    "summary": {
+      "performance": 0.94,
+      "accessibility": 0.96,
+      "best-practices": 0.92,
+      "seo": 0.91,
+      "pwa": 0.33
+    }
+  }
+]

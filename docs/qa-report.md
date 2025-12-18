@@ -9,6 +9,7 @@ This project follows Test-Driven Development (TDD) principles where tests were w
 ### 1. Homepage Tests (`tests/homepage.spec.js`)
 
 **Tests Written First:**
+
 - Homepage loads successfully
 - Theme switcher is present and functional
 - Switching themes changes data-theme attribute
@@ -20,6 +21,7 @@ This project follows Test-Driven Development (TDD) principles where tests were w
 ### 2. Submission Tests (`tests/submission.spec.js`)
 
 **Tests Written First:**
+
 - Submission page loads successfully
 - Form fields are present
 - Form validates required fields
@@ -31,6 +33,7 @@ This project follows Test-Driven Development (TDD) principles where tests were w
 ### 3. Theme Pages Tests (`tests/theme-pages.spec.js`)
 
 **Tests Written First:**
+
 - Each theme page loads and applies theme
 - Theme pages show all required components
 - Themes index page lists all themes
@@ -40,6 +43,7 @@ This project follows Test-Driven Development (TDD) principles where tests were w
 ## Test Coverage
 
 ### Functional Tests
+
 - ✅ Homepage functionality
 - ✅ Theme switching
 - ✅ Form submission
@@ -47,11 +51,13 @@ This project follows Test-Driven Development (TDD) principles where tests were w
 - ✅ Navigation
 
 ### Visual Tests
+
 - ✅ Theme application
 - ✅ Component visibility
 - ✅ Responsive design (implicit)
 
 ### Integration Tests
+
 - ✅ Form submission flow
 - ✅ Theme persistence
 - ✅ Navigation flow
@@ -72,6 +78,7 @@ npx playwright test tests/homepage.spec.js
 ## Test Results
 
 All tests pass successfully:
+
 - Homepage: 5/5 tests passing
 - Submission: 5/5 tests passing
 - Theme Pages: 15/15 tests passing (5 themes × 3 tests)
@@ -97,10 +104,10 @@ All tests pass successfully:
 ## Conclusion
 
 The TDD approach ensured that:
+
 - All core functionality is tested
 - Tests guide implementation
 - Quality is maintained throughout development
 - Regression is prevented
 
 **Status**: ✅ **TDD APPROACH SUCCESSFULLY IMPLEMENTED**
-

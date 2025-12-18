@@ -10,13 +10,14 @@ A production-ready Eleventy (11ty) website showcasing five drastically different
 - **Form Submissions**: Airtable + Discord integration
 - **GDPR Compliance**: Cookie consent and privacy policy
 - **Quality Gates**: Automated linting, testing, and Lighthouse CI
+- **Visual Assessment**: Automated screenshot and design quality analysis
 - **CI/CD**: GitHub Actions with comprehensive quality checks
 
 ## 🚀 Quick Start
 
 ### Prerequisites
 
-- Node.js 20+ 
+- Node.js 20+
 - npm or yarn
 
 ### Installation
@@ -96,6 +97,7 @@ DISCORD_WEBHOOK_REVIEW_QUEUE=your-webhook-url
 ## 📚 Documentation
 
 - [Architecture](./docs/architecture.md) - System architecture and data flow
+- [Visual Assessment Guide](./docs/visual-assessment-guide.md) - Automated screenshot and design quality analysis
 - [Acceptance Criteria](./docs/acceptance-criteria.md) - Project requirements
 - [Quality Rubric](./docs/quality-rubric.md) - Quality evaluation criteria
 - [Analytics Evaluation](./docs/analytics-evaluation.md) - Analytics tool analysis
@@ -172,6 +174,8 @@ npm run build
 - `npm run lint` - Run all linters
 - `npm run lighthouse` - Run Lighthouse CI
 - `npm run bundle-size` - Check bundle sizes
+- `npm run visual-assessment:advanced` - Take screenshots and assess visual quality
+- `npm run screenshots` - Alias for visual assessment
 - `npm run generate-review-packet` - Generate review packet
 
 ## 🎓 Educational Value
@@ -198,8 +202,3 @@ Built as a demonstration of professional-grade web development practices with au
 ---
 
 **Status**: ✅ Production Ready
-
-
-
-
-

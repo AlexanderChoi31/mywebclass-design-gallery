@@ -1,12 +1,5 @@
 {
   "extends": "stylelint-config-standard",
-  "rules": {
-    "color-hex-case": "lower",
-    "color-hex-length": "short",
-    "declaration-block-trailing-semicolon": "always",
-    "indentation": 2,
-    "max-line-length": 120
-  },
+  "rules": {},
   "ignoreFiles": ["node_modules/**", "_site/**"]
 }
-

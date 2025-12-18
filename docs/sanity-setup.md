@@ -110,4 +110,3 @@ Sanity Studio can be deployed separately or embedded. For this project, content 
 - [Sanity Documentation](https://www.sanity.io/docs)
 - [Sanity Schema Types](https://www.sanity.io/docs/schema-types)
 - [Sanity Client](https://www.sanity.io/docs/js-client)
-

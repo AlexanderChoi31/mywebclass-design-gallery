@@ -1,0 +1,20 @@
+{
+	"geolocation": {
+		"data": {
+			"city": "Short Hills",
+			"country": {
+				"code": "US",
+				"name": "United States"
+			},
+			"subdivision": {
+				"code": "NJ",
+				"name": "New Jersey"
+			},
+			"timezone": "America/New_York",
+			"latitude": 40.7358,
+			"longitude": -74.3244,
+			"postalCode": "07078"
+		},
+		"timestamp": 1766045981314
+	}
+}

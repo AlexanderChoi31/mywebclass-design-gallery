@@ -14,7 +14,7 @@ if (!fs.existsSync(logsDir)) {
   fs.mkdirSync(logsDir, { recursive: true });
 }
 
-const themes = ['onyx', 'paper', 'neon', 'brutal', 'calm'];
+const themes = ['onyx', 'paper', 'neon', 'brutal', 'calm', 'royal'];
 
 const qualityReport = `QUALITY REPORT - MYWEBCLASS DESIGN GALLERY
 ================================================

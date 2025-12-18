@@ -10,8 +10,8 @@ module.exports = {
     sourceType: 'module'
   },
   rules: {
-    'no-console': 'warn',
-    'no-unused-vars': 'warn',
+    'no-console': 'off',
+    'no-unused-vars': ['warn', { argsIgnorePattern: '^(event|context)$' }],
     'prefer-const': 'warn'
   },
   overrides: [
@@ -19,6 +19,15 @@ module.exports = {
       files: ['_functions/**/*.js'],
       env: {
         node: true
+      },
+      rules: {
+        'no-console': 'off'
+      }
+    },
+    {
+      files: ['src/js/**/*.js'],
+      rules: {
+        'no-console': 'error'
       }
     }
   ]

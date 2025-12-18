@@ -37,6 +37,7 @@ description: Submit your feedback or contact us
                         <option value="neon">Neon</option>
                         <option value="brutal">Brutal</option>
                         <option value="calm">Calm</option>
+                        <option value="royal">Royal</option>
                     </select>
                 </div>
                 
