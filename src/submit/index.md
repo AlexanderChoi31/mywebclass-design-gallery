@@ -17,7 +17,7 @@ description: Submit your feedback or contact us
 <div class="section">
     <div class="container">
         <div style="max-width: 600px;">
-            <form id="submission-form" method="POST" action="/.netlify/functions/submit" netlify>
+            <form id="submission-form" method="POST" action="/.netlify/functions/submit" netlify data-netlify="true">
                 <div class="form-group">
                     <label for="name">Name *</label>
                     <input type="text" id="name" name="name" required placeholder="Your name">
@@ -77,7 +77,10 @@ document.getElementById('submission-form').addEventListener('submit', async func
     try {
         const response = await fetch('/.netlify/functions/submit', {
             method: 'POST',
-            body: formData
+            headers: {
+                'Content-Type': 'application/x-www-form-urlencoded',
+            },
+            body: new URLSearchParams(formData)
         });
         
         const result = await response.json();

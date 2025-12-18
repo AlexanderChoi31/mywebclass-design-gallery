@@ -1,12 +1,42 @@
 /**
  * Netlify Function: Submit Form
- * Handles form submissions, saves to Airtable, and sends Discord notification
+ * Handles form submissions and sends Discord notification
+ * Works with or without Airtable (optional)
  */
 
-const Airtable = require('airtable');
 const fetch = require('node-fetch');
 
+// Helper to parse form data
+function parseFormData(body, contentType) {
+  if (contentType && contentType.includes('application/json')) {
+    return JSON.parse(body);
+  }
+  
+  // Parse URL-encoded form data
+  const params = new URLSearchParams(body);
+  return {
+    name: params.get('name'),
+    email: params.get('email'),
+    theme: params.get('theme') || '',
+    message: params.get('message'),
+    newsletter: params.get('newsletter') || ''
+  };
+}
+
 exports.handler = async (event, context) => {
+  // Handle CORS preflight
+  if (event.httpMethod === 'OPTIONS') {
+    return {
+      statusCode: 200,
+      headers: {
+        'Access-Control-Allow-Origin': '*',
+        'Access-Control-Allow-Headers': 'Content-Type',
+        'Access-Control-Allow-Methods': 'POST, OPTIONS'
+      },
+      body: ''
+    };
+  }
+
   // Only allow POST requests
   if (event.httpMethod !== 'POST') {
     return {
@@ -16,7 +46,8 @@ exports.handler = async (event, context) => {
   }
 
   try {
-    const formData = JSON.parse(event.body);
+    // Parse form data (handles both JSON and form-encoded)
+    const formData = parseFormData(event.body, event.headers['content-type']);
     const { name, email, theme, message, newsletter } = formData;
 
     // Validate required fields
@@ -29,10 +60,12 @@ exports.handler = async (event, context) => {
 
     const timestamp = new Date().toISOString();
 
-    // Save to Airtable
+    // Save to Airtable (optional - only if credentials are provided)
     let airtableResult = null;
-    if (process.env.AIRTABLE_API_KEY && process.env.AIRTABLE_BASE_ID) {
+    if (process.env.AIRTABLE_API_KEY && process.env.AIRTABLE_BASE_ID && process.env.AIRTABLE_API_KEY !== 'placeholder') {
       try {
+        // Dynamically require Airtable only if needed
+        const Airtable = require('airtable');
         const base = new Airtable({ apiKey: process.env.AIRTABLE_API_KEY })
           .base(process.env.AIRTABLE_BASE_ID);
 
@@ -101,10 +134,15 @@ exports.handler = async (event, context) => {
 
     return {
       statusCode: 200,
+      headers: {
+        'Content-Type': 'application/json',
+        'Access-Control-Allow-Origin': '*',
+        'Access-Control-Allow-Headers': 'Content-Type'
+      },
       body: JSON.stringify({
         success: true,
         message: 'Submission received successfully',
-        airtableId: airtableResult?.[0]?.id
+        airtableId: airtableResult?.[0]?.id || null
       })
     };
   } catch (error) {
