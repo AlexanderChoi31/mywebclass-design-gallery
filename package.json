@@ -27,7 +27,8 @@
     "quality-full": "npm run lint && npm test && npm run bundle-size && npm run lighthouse",
     "quality-comprehensive": "node scripts/comprehensive-quality-check.js",
     "generate-review-packet": "node scripts/generate-review-packet.js",
-    "postbuild": "npm run generate-review-packet"
+    "postbuild": "npm run generate-review-packet",
+    "test:all": "node scripts/test-everything.js"
   },
   "keywords": [
     "eleventy",

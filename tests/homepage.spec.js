@@ -28,7 +28,7 @@ test.describe('Homepage', () => {
     
     // Check all theme options are present
     const options = themeSwitcher.locator('option');
-    await expect(options).toHaveCount(5);
+    await expect(options).toHaveCount(6); // Updated to include Royal theme
     
     // Verify theme options
     const optionTexts = await options.allTextContents();
