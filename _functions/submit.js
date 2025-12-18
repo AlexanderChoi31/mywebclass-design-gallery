@@ -5,6 +5,7 @@
  */
 
 const fetch = require('node-fetch');
+const { sendDiscordMessage } = require('./discord-webhook.js');
 
 // Helper to parse form data
 function parseFormData(body, contentType) {
@@ -93,34 +94,72 @@ exports.handler = async (event, context) => {
     let discordResult = null;
     if (process.env.DISCORD_WEBHOOK_SUBMISSIONS) {
       try {
-        const discordMessage = {
-          content: '📝 New Form Submission',
-          embeds: [
-            {
-              title: 'New Submission',
-              color: 0x5865F2,
-              fields: [
-                { name: 'Name', value: name, inline: true },
-                { name: 'Email', value: email, inline: true },
-                { name: 'Theme', value: theme || 'None', inline: true },
-                { name: 'Message', value: message.substring(0, 1000) },
-                { name: 'Newsletter', value: newsletter === 'yes' ? 'Yes' : 'No', inline: true },
-                { name: 'Time', value: timestamp, inline: true }
-              ],
-              timestamp: timestamp
-            }
-          ]
-        };
+        // Truncate message if too long (Discord embed field limit is 1024 characters)
+        const messagePreview = message.length > 1000 
+          ? message.substring(0, 1000) + '...' 
+          : message;
 
-        discordResult = await fetch(process.env.DISCORD_WEBHOOK_SUBMISSIONS, {
-          method: 'POST',
-          headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify(discordMessage)
-        });
+        discordResult = await sendDiscordMessage(
+          process.env.DISCORD_WEBHOOK_SUBMISSIONS,
+          '📝 **New Form Submission Received**',
+          {
+            embeds: [
+              {
+                title: '📋 Feedback Submission',
+                description: 'A new feedback submission has been received from the website.',
+                color: 0x5865F2, // Discord blue
+                fields: [
+                  { 
+                    name: '👤 Name', 
+                    value: name || 'Not provided', 
+                    inline: true 
+                  },
+                  { 
+                    name: '📧 Email', 
+                    value: email || 'Not provided', 
+                    inline: true 
+                  },
+                  { 
+                    name: '🎨 Favorite Theme', 
+                    value: theme || 'None selected', 
+                    inline: true 
+                  },
+                  { 
+                    name: '💬 Message', 
+                    value: messagePreview || 'No message provided',
+                    inline: false
+                  },
+                  { 
+                    name: '📰 Newsletter', 
+                    value: newsletter === 'yes' ? '✅ Subscribed' : '❌ Not subscribed', 
+                    inline: true 
+                  },
+                  { 
+                    name: '🕐 Submitted At', 
+                    value: new Date(timestamp).toLocaleString(), 
+                    inline: true 
+                  }
+                ],
+                footer: {
+                  text: 'MyWebClass Design Gallery - Form Submissions'
+                },
+                timestamp: timestamp
+              }
+            ]
+          }
+        );
+
+        if (discordResult && discordResult.ok) {
+          console.log('Discord notification sent successfully');
+        } else {
+          console.warn('Discord notification may have failed');
+        }
       } catch (discordError) {
-        console.error('Discord error:', discordError);
-        // Continue even if Discord fails
+        console.error('Discord notification error:', discordError);
+        // Continue even if Discord fails - don't block form submission
       }
+    } else {
+      console.warn('DISCORD_WEBHOOK_SUBMISSIONS not configured - skipping Discord notification');
     }
 
     // Log submission
